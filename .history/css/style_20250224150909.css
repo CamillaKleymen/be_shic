@@ -23,9 +23,7 @@
     color: var(--text-dark);
 }
 
-.text-gray {
-    color: var(--text-gray);
-}
+
 
 .text-muted {
     color: var(--text-muted);
@@ -36,6 +34,8 @@
 }
 
 /* common sizes */
+
+
 .w-40 {
     width: 40%;
 }
@@ -63,11 +63,6 @@ h1 {
 }
 
 h2 {
-    font-size: 44px;
-    color: var(--text-white);
-}
-
-h3 {
-    font-size: 24px;
+    font-size: 32px;
     color: var(--text-white);
 }

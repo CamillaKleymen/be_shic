@@ -4,10 +4,10 @@
 
 :root {
     --text-white: #fff;
-    --text-muted: #a8b2d1;
-    --text-gray: #333;
+    --gray: #333;
     --text-dark: #000;
-    --dark-blue: #0a192f;
+    --
+
 }
 
 /* common settings which related with colors and background-colors, etc */
@@ -15,25 +15,6 @@
     background-color: var(--text-gray);
 }
 
-.text-white {
-    color: var(--text-white);
-}
-
-.text-dark {
-    color: var(--text-dark);
-}
-
-.text-gray {
-    color: var(--text-gray);
-}
-
-.text-muted {
-    color: var(--text-muted);
-}
-
-.text-blue {
-    color: var(--dark-blue);
-}
 
 /* common sizes */
 .w-40 {
@@ -63,11 +44,6 @@ h1 {
 }
 
 h2 {
-    font-size: 44px;
-    color: var(--text-white);
-}
-
-h3 {
-    font-size: 24px;
+    font-size: 32px;
     color: var(--text-white);
 }
