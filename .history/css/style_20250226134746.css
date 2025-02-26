@@ -90,3 +90,7 @@ h3 {
     margin-left: -10px;
 }
 
+
+.bg-none {
+    background-color: transparent;
+}
