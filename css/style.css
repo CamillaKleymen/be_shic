@@ -1,0 +1,429 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+
+
+:root {
+    --text-white: #fff;
+    --text-muted: #a8b2d1;
+    --text-gray: #333;
+    --text-dark: #000;
+    --dark-blue: #0a192f;
+    --light-gray: #f8f9fa;
+    --border-gray: #535353;
+    --text-green: #003130; 
+    --text-beige: #C8BE9A9A;
+
+}
+
+/* for titles */
+@font-face {
+    font-family: 'Kudry';
+    src: url('../fonts/PT/PT/Kudry/kudry_weird-headline.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* for main text */
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('../fonts/VelaSans/Static/TTF/VelaSans-Regular.ttf') format('truetype'),
+         url('../fonts/VelaSans/Variable/VelaSans-GX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* body {
+    font-family: 'Kudry', sans-serif;
+} */
+
+/* common settings which related with colors and background-colors, etc */
+
+.blur-bg {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-green {
+    background: var(--text-green);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.text-green {
+    color: var(--text-green);
+}
+
+.text-beige {
+    color: var(--text-beige);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-blue {
+    color: var(--dark-blue);
+}
+
+/* common sizes */
+.w-40 {
+    width: 40%;
+}
+
+
+/* banner background */
+.banner {
+    background-image: url('../images/index/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* titles settings */
+h1 {
+    font-size: 170px;
+    color: var(--text-white);
+    font-family: 'Kudry', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    color: var(--text-white);
+    font-family: 'Kudry', sans-serif;
+}
+
+h3 {
+    font-size: 34px;
+    color: var(--text-white);
+    font-family: 'Kudry', sans-serif;
+}
+
+h4 {
+    font-size: 32px;
+    color: var(--text-white);
+    font-family: 'Vela Vans', sans-serif;
+}
+
+h5 {
+    font-size: 30px;
+    color: var(--text-white);
+    font-family: 'Kudry', sans-serif;
+}
+
+h6 {
+    font-size: 28px;
+    color: var(--text-white);
+    /* font-weight: 200; */
+    font-family: 'Vela Vans', sans-serif;
+}
+
+ p {
+    font-size: 28px;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-family: 'Vela Sans', sans-serif;
+ }
+ 
+
+/* header  */
+.form-select {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--border-gray);
+    border-radius: 5px;
+    background-color: var(--light-gray);
+    color: var(--text-muted);
+    font-family: 'Vela Sans', sans-serif;
+}
+
+
+
+
+/* settings  of page */
+.border-dark {
+    /* border-color: var(--text-muted); */
+    border: 5px solid var(--text-muted);
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 6;
+    margin-left: -15px;
+}
+
+/* blur buttons of main page  */
+.blur-btn {
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.blur-btn.active {
+    background: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blur-btn.inactive {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+
+/* filter settings  */
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0a3d3d;
+    padding: 15px 25px;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-item label {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.search-input i {
+    color: white;
+    margin-right: 10px;
+}
+
+.form-select,
+.form-control {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 250px;
+}
+
+.search-btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 200px;
+}
+
+
+
+/* settings of cards of main page */
+
+.card {
+    position: relative;
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border-radius: 15px; */
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.6)); */
+    padding: 20px;
+    color: white;
+    /* border-radius: 15px; */
+}
+
+/* .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+} */
+
+/* .card-text {
+    font-size: 1rem;
+} */
+
+.card-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: white;
+    color: black;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* hostel section */
+
+/* Общие стили секции */
+.hostel-section {
+    padding: 50px 0;
+}
+
+/* Стили для заголовков */
+.text-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #002D26;
+}
+
+.text-subtitle {
+    color: #C4A77D;
+}
+
+.text-description {
+    font-size: 1.2rem;
+    color: #004D40;
+    max-width: 80%;
+}
+
+/* Стили для списка удобств */
+.feature {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feature-icon {
+    background: #F4F4F4;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-green);
+}
+
+.feature-text {
+    color: #666;
+}
+
+/* Кнопка */
+.btn-success {
+    background: var(--text-green);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 180px;
+}
+
+.btn-success:hover {
+    background: #002D26;
+}
+
+/* Стили карусели */
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+/* Оверлей на изображении с блюром */
+.overlay-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px); /* Размытие фона */
+    background: rgba(255, 255, 255, 0.3); /* Полупрозрачный фон */
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* Элементы внутри оверлея */
+.overlay-item {
+    color: #002D26;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.overlay-item i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+
+} 
+
+
+/* book your ideal room */
+
+.ideal-room {
+    background-image: url('../images/index/ideal_room.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
