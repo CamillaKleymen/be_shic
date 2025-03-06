@@ -56,6 +56,10 @@
     background: var(--text-green);
 }
 
+.bg-beige {
+    background: var(--text-beige);
+}
+
 .text-white {
     color: var(--text-white);
 }
@@ -96,6 +100,19 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+.banner-hostel {
+    background-image: url('../images/hostel/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
