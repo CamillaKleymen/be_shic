@@ -51,9 +51,19 @@
     align-items: center;
 }
 
-
 .bg-green {
     background: var(--text-green);
+}
+
+.bg-footer {
+    background-image: url('../images/index/Be_Shic_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bg-beige {
