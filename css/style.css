@@ -12,6 +12,7 @@
     --border-gray: #535353;
     --text-green: #003130; 
     --text-beige: #C8BE9A9A;
+    --form-gray: #D0D5DD;
 
 }
 
@@ -187,10 +188,38 @@ h6 {
     border: 1px solid var(--border-gray);
     border-radius: 5px;
     background-color: var(--light-gray);
-    color: var(--text-muted);
+    color: var(--text-gray);
     font-family: 'Vela Sans', sans-serif;
+    /* border: 2px solid var(--text-gray); */
+    border-color: #333;
 }
 
+.form-select, .form-control {
+    background: transparent;
+    /* border: 3px solid var(--form-gray) !important; */
+    color: var(--text-gray) !important;
+    font-family: 'Vela Sans', sans-serif;
+    width: 250px;
+    /* border-radius: 10px; */
+    font-size: 24px;
+    height: 70px!important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+}
+
+
+.input-group {
+    height: 70px !important;
+}
+
+.border-gray {
+    border: 3px solid var(--form-gray) !important;
+}
 
 
 
