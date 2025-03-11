@@ -58,9 +58,10 @@
 .bg-footer {
     background-image: url('../images/index/Be_Shic_footer.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Stretch in width */
+    height: 21vh; /* Reduced height by 30% */
     background-position: center;
-    height: 50vh;
+    height: 30vh; /* Reduced height from 40vh to 30vh */
     display: flex;
     justify-content: space-between;
     align-items: center;
