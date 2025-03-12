@@ -31,164 +31,168 @@
 
 <body>
 
-    <!-- Header -->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <h1 class="fw-bold display-6 text-gray mb-0">Be Shic</h1>
-                    <p class="text-muted
-                        fs-4 mb-0">hostel</p>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="d-flex justify-content-end align-items-end">
-                    <select class="form-select me-2">
-                        <option>English</option>
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between px-4 py-2 border-bottom">
+                <div>
+                    <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <select class="form-select border-gray me-2 rounded-4">
+                        <option selected>English</option>
                         <option>Русский</option>
+                        <option>Français</option>
                     </select>
-                    <select class="form-select me-2">
-                        <option>USD</option>
+
+                    <select class="form-select border-gray me-3 rounded-4">
+                        <option selected>USD</option>
                         <option>EUR</option>
                         <option>RUB</option>
                     </select>
-                    <button class="btn btn-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person" viewBox="0 0 16 16">
-                            <path
-                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z" />
-                        </svg>
+
+                    <button class="btn btn-light rounded-3 d-flex align-items-center justify-content-center p-0">
+                        <i class="bi bi-x fs-2 text-dark" style="font-size: 16px;"></i>
                     </button>
+
                 </div>
-                <!-- Breadcrumbs -->
-                <nav aria-label="breadcrumb" class="mb-2">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home-Booking</a></li>
-                    </ol>
-                </nav>
-
-            </div>
-        </nav>
-    </section>
-
-
-
-    <section>
-        <div class="container-fluid mt-4">
-
-
-            <!-- Room Title -->
-            <div class="mb-3">
-                <a href="#" class="text-decoration-none text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                    </svg>
-                    Back
-                </a>
-                <h2 class="h4 mt-2">Solo Room with Shared Bathroom</h2>
-            </div>
-
-            <!-- Room Image Gallery -->
-            <div class="mb-4">
-                <img src="images/hostel/room.png" alt="Solo Room" class="img-fluid rounded mb-2 w-100">
-                <div class="d-flex mt-2">
-                    <img src="images/hostel/room.png" alt="Room view 1" class="img-thumbnail me-2"
-                        style="width: 150px; height: 100px; object-fit: cover;">
-                    <img src="images/hostel/room.png" alt="Room view 2" class="img-thumbnail me-2"
-                        style="width: 150px; height: 100px; object-fit: cover;">
-                    <img src="images/hostel/room.png" alt="Room view 3" class="img-thumbnail me-2"
-                        style="width: 150px; height: 100px; object-fit: cover;">
-                    <img src="images/hostel/room.png" alt="Room view 4" class="img-thumbnail me-2"
-                        style="width: 150px; height: 100px; object-fit: cover;">
-                </div>
-            </div>
-
-            <!-- Room Capacity -->
-            <div class="d-flex align-items-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z" />
-                </svg>
-                <span class="ms-2">Maximum persons: 1</span>
-            </div>
-
-            <!-- Amenities -->
-            <div class="row mb-4">
-                <div class="col-6 col-md-3 mb-3">
-                    <div class="d-flex align-items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-car-front me-2 mt-1" viewBox="0 0 16 16">
-                            <path
-                                d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276M2.118 8.5H2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.118a5.5 5.5 0 0 0 0-2m11.764 0H14a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.118a5.5 5.5 0 0 0 0-2M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
-                        </svg>
-                        <div>
-                            <div>Transfer:</div>
-                            <small class="text-muted">Transport to the airport can be arranged upon request</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <div class="d-flex align-items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-cup-hot me-2 mt-1" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z" />
-                            <path
-                                d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8" />
-                        </svg>
-                        <div>
-                            <div>Ready-made food:</div>
-                            <small class="text-muted">Available</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <div class="d-flex align-items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-wifi me-2 mt-1" viewBox="0 0 16 16">
-                            <path
-                                d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z" />
-                            <path
-                                d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z" />
-                        </svg>
-                        <div>
-                            <div>Free Wi-Fi:</div>
-                            <small class="text-muted">Available in all areas of the hostel</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <div class="d-flex align-items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-basket me-2 mt-1" viewBox="0 0 16 16">
-                            <path
-                                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5" />
-                        </svg>
-                        <div>
-                            <div>Laundry:</div>
-                            <small class="text-muted">Laundry service available at extra cost</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Price Box -->
-            <div class="bg-dark text-white p-3 text-center rounded mb-3">
-                <h3 class="h5 mb-0">₽605</h3>
-                <small>per night + VAT</small>
-            </div>
-
-            <!-- Book Now Button -->
-            <div class="mb-4">
-                <button class="btn btn-dark w-100 py-2">Book now</button>
             </div>
         </div>
+    </header>
+
+    <!-- booking // room in detailed -->
+    <section>
+        <div class="container-fluid py-4">
+            <a href="#" class="text-muted mb-3 text-decoration-none fs-4 d-inline-block"><i
+                    class="bi bi-chevron-left ps-2 fs-5 pe-3"></i>Back</a>
+            <p class="fw-bolder fs-2 text-green">Solo Room with Shared <br> Bathroom</p>
+            <div class="card border-0 shadow-sm">
+                <img src="images/booking_detailed/room.png" class="card-img-top img-fluid rounded h-50 p-4"
+                    alt="Room Image">
+                <div class="card-body">
+                    <div class="d-flex overflow-auto mb-3 ps-2">
+                        <img src="images/booking_detailed/room.png"
+                            class="img-thumbnail rounded-5 border-dark-green me-2">
+                        <img src="images/booking_detailed/room.png" class="img-thumbnail rounded-5 me-2">
+                        <img src="images/booking_detailed/room.png" class="img-thumbnail rounded-5 me-2">
+                        <img src="images/booking_detailed/room.png" class="img-thumbnail rounded-5 me-2">
+                    </div>
+                    <div class="">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-people-fill fs-3 text-gray me-2"></i>
+                            <span class="text-dark fs-3">Maximum person: 1</span>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-3">
+                                <div class="border rounded-4 p-3 d-flex align-items-center">
+                                    <i class="bi bi-car-front-fill fs-1 text-green me-3"></i>
+                                    <div>
+                                        <strong class="fs-5 text-green">Transfer:</strong>
+                                        <p class="m-0 fs-6 text-muted">Transfer from/to the airport can be arranged upon
+                                            request</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="border rounded-4 p-3 d-flex align-items-center">
+                                    <i class="bi bi-emoji-smile fs-1 text-green me-3"></i>
+                                    <div>
+                                        <strong class="fs-5 text-green">Ready-made food:</strong>
+                                        <p class="m-0 fs-6 text-muted">Mazzali</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="border rounded-4 p-3 d-flex align-items-center">
+                                    <i class="bi bi-wifi fs-1 text-green me-3"></i>
+                                    <div>
+                                        <strong class="fs-5 text-green">Free Wi-Fi:</strong>
+                                        <p class="m-0 fs-6 text-muted">Available in all areas of the hostel</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="border rounded-4 p-3 d-flex align-items-center">
+                                    <i class="bi bi-basket fs-1 text-green me-3"></i>
+                                    <div>
+                                        <strong class="fs-5 text-green">Laundry:</strong>
+                                        <p class="m-0 fs-6 text-muted">Laundry service available at extra cost</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span class="bg-green text-white px-3 py-1 rounded-2 fs-6">-20%</span>
+                                <span class="text-muted text-decoration-line-through fs-5">72$</span>
+                                <span class="fs-2 fw-bold text-dark">60$</span>
+                                <span class="text-gray fs-6">per room / nightly</span>
+                            </div>
+                            <button type="button" class="btn btn-success w-75 bg-green text-white rounded-4 py-3 fs-5">Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-green text-white py-5 rounded-top">
+        <div class="container-fluid">
+            <div class="row px-4 py-3 d-flex align-items-center">
+                <div class="col-md-4">
+                    <div class="me-4">
+                        <img src="images/index/be_shic_logo_footer.png" alt="BeShic Logo" class="img-fluid w-25 mb-4">
+                    </div>
+                    <p class="text-white mb-0">Our mission is to create a home away from home experience for every
+                        guest, providing an impeccable environment for relaxation and work.</p>
+                </div>
+                <div class="col-md-6"></div>
+
+                <div class="col-md-2 d-flex justify-content-end align-items-end">
+                    <a href="#" class="d-flex rounded-circle justify-content-center align-items-center">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    </a>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    </a>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    </a>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row bg-footer mt-4">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <div class="ps-5">
+                        <h5 class="fw-bold mb-3">Main page</h5>
+                        <ul class="list-unstyled ">
+                            <li class="mb-2 fs-4"><a href="#" class="text-white text-decoration-none">Hostel</a></li>
+                            <li class="mb-2 fs-4"><a href="#" class="text-white text-decoration-none">Hotel</a></li>
+                            <li class="mb-2 fs-4"><a href="#" class="text-white text-decoration-none">Apartment</a></li>
+                        </ul>
+                        <p class="text-beige mt-5">© 2025 All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class=" text-end pe-5">
+                        <h3 class="fw-bold mb-3">Contacts</h3>
+                        <p class="text-white mb-1">asulevasadbek@gmail.com</p>
+                        <p class="text-white">998 99 198 08 88</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
