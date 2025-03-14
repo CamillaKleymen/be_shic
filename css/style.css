@@ -34,6 +34,14 @@
     font-style: normal;
 }
 
+.VelaSans {
+    font-family: 'Vela Sans', sans-serif;
+    src: url('../fonts/VelaSans/Static/TTF/VelaSans-Regular.ttf') format('truetype'),
+         url('../fonts/VelaSans/Variable/VelaSans-GX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* body {
     font-family: 'Kudry', sans-serif;
@@ -524,3 +532,21 @@ h6 {
     border-radius: 5px;
 
 }
+
+
+
+/* additional services */
+
+.nav-pills .nav-link {
+    color: var(--text-green);
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--text-green);
+    background-color: transparent;
+}
+
