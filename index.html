@@ -45,7 +45,7 @@
             </button>
         </div>
         <a href="#" class="text-decoration-none text-light text-center">
-            <img src="images/index/logo.png" alt="Be Shic" class="h-25 w-50">
+            <img src="images/index/logo.png" alt="Be Shic" class="h-25" width="120">
         </a>
         <button class="btn btn-light rounded-4 px-5 py-2 fs-4">Book Now</button>
     </header>
@@ -54,14 +54,14 @@
         <div class="container-fluid">
             <div
                 class="d-flex flex-column banner justify-content-center align-items-center text-center p-4 border-rounded rounded-5">
-                <h1 class="fw-medium">Welcome <br> to BeShic</h1>
+                <h1 class="fw-medium pt-5 mt-5">Welcome <br> to BeShic</h1>
                 <h6 class="display-6 w-40"> Discover the Be Shic network of hostels, hotels and
                     apartments - a place where comfort, style and
                     affordability combine to create an unforgettable holiday.</h6>
-                <div class="blur-bg mt-5 w-25 py-4 justify-content-between d-flex">
-                    <a href="#" class="blur-btn active ms-5">Hostel</a>
-                    <a href="#" class="blur-btn inactive">Apart-Hotel</a>
-                    <a href="#" class="blur-btn inactive me-5">Apartment</a>
+                <div class="blur-bg mt-5 py-4 justify-content-between d-flex px-5 rounded-4" width="40%">
+                    <a href="#" class="blur-btn active rounded-3">Hostel</a>
+                    <a href="#" class="blur-btn inactive rounded-3">Apart-Hotel</a>
+                    <a href="#" class="blur-btn inactive rounded-3">Apartment</a>
                 </div>
 
             </div>
@@ -71,45 +71,51 @@
 
     <!-- filter -->
     <section class="search-section">
-        <div class="container-fluid px-5">
-            <div class="search-box">
-                <div class="search-item">
-                    <label>House</label>
-                    <div class="search-input">
-                        <i class="bi bi-geo-alt"></i>
-                        <select class="form-select">
-                            <option selected>Please choose</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
+        <div class="container-fluid mt-4">
+            <div class="p-3 bg-green text-white rounded-4">
+                <form class="row w-100 g-2 align-items-center">
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold">House</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-green border-0 text-white"><i class="bi bi-geo-alt"></i></span>
+                            <select class="form-select bg-green border-0 text-white rounded-4">
+                                <option selected>Please choose</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="search-item">
-                    <label>Check-in</label>
-                    <div class="search-input">
-                        <i class="bi bi-calendar"></i>
-                        <input type="date" class="form-control">
+                    <div class="col-md-2">
+                        <label class="form-label fw-bold">Check-in</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-green border-0 text-white"><i class="bi bi-calendar"></i></span>
+                            <select class="form-select bg-green border-0 text-white rounded-4">
+                                <option selected>Add dates</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="search-item">
-                    <label>Check-out</label>
-                    <div class="search-input">
-                        <i class="bi bi-calendar"></i>
-                        <input type="date" class="form-control">
+                    <div class="col-md-2">
+                        <label class="form-label fw-bold">Check-out</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light-green border-0 text-white"><i class="bi bi-calendar"></i></span>
+                            <select class="form-select bg-green border-0 text-white rounded-4">
+                                <option selected>Add dates</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="search-item">
-                    <label>Guests</label>
-                    <div class="search-input">
-                        <i class="bi bi-person"></i>
-                        <select class="form-select">
-                            <option selected>1 guest</option>
-                            <option>2 guests</option>
-                            <option>3 guests</option>
-                        </select>
+                    <div class="col-md-2">
+                        <label class="form-label fw-bold">Guests</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-green border-0 text-white"><i class="bi bi-person"></i></span>
+                            <select class="form-select bg-green border-0 text-white rounded-4">
+                                <option selected>1 guest</option>
+                                <option>2 guests</option>
+                                <option>3 guests</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <button class="btn btn-light search-btn">Search</button>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-light rounded-4 px-4">Search</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -184,7 +190,7 @@
                         <img src="images/index/hostel.png" alt="Hostel" class="card-img">
                         <div class="card-overlay">
                             <p class="text-white fs-2">Hostel</p>
-                            <p class="text-white fs-3">👤 +150 users</p>
+                            <p class="text-white fs-3"> +150 users</p>
                             <div class="card-icon fs-1">➜</div>
                         </div>
                     </div>
@@ -195,7 +201,7 @@
                         <img src="images/index/apart-hotel.png" alt="Apart-Hotel" class="card-img">
                         <div class="card-overlay">
                             <p class="text-white fs-2">Apart-Hotel</p>
-                            <p class="text-white fs-3">👤 +150 users</p>
+                            <p class="text-white fs-3"> +150 users</p>
                             <div class="card-icon fs-1">➜</div>
                         </div>
                     </div>
@@ -206,7 +212,7 @@
                         <img src="images/index/apartment.png" alt="Apartment" class="card-img">
                         <div class="card-overlay">
                             <p class="text-white fs-2">Apartment</p>
-                            <p class="text-white fs-3">👤 +150 users</p>
+                            <p class="text-white fs-3"><i class="bi bi-person"></i> +150 users</p>
                             <div class="card-icon fs-1">➜</div>
                         </div>
                     </div>

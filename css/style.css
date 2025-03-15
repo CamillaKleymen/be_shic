@@ -11,7 +11,7 @@
     --light-gray: #f8f9fa;
     --border-gray: #535353;
     --text-green: #003130; 
-    --text-beige: #C8BE9A9A;
+    --text-beige: #C8BE9A;
     --form-gray: #D0D5DD;
 
 }
@@ -79,6 +79,11 @@
 .bg-beige {
     background: var(--text-beige);
 }
+
+.bg-light-green {
+    background: #335A59;
+}
+
 
 .text-white {
     color: var(--text-white);
@@ -275,46 +280,11 @@ h6 {
 
 /* filter settings  */
 
-.search-section {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+.input-group {
+    height: 70px !important;
+    background-color: #CCD6D6;
+  }
 
-.search-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #0a3d3d;
-    padding: 15px 25px;
-    border-radius: 15px;
-    gap: 15px;
-}
-
-.search-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.search-item label {
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.search-input {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 10px;
-}
-
-.search-input i {
-    color: white;
-    margin-right: 10px;
-}
 
 .form-select,
 .form-control {
@@ -329,7 +299,7 @@ h6 {
     padding: 10px 20px;
     font-weight: bold;
     width: 200px;
-}
+} 
 
 
 
