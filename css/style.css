@@ -469,14 +469,19 @@ h6 {
     border: 2px solid var(--text-green);
 }
 
-.btn-light {
+/* .btn-light {
     width: 36px; 
     height: 36px; 
     color: gray; 
     border-color: gray;
   
-}
+} */
 
+.button-light :hover {
+    background: #CCD6D6;
+    color: var(--text-green);
+    border: 2px solid var(--text-green);
+}
 
 /* Стили карусели */
 .carousel-inner img {
