@@ -14,6 +14,7 @@
     --text-beige: #C8BE9A;
     --form-gray: #D0D5DD;
     --light-green: #335A59; 
+    --light-muted: #E6E6E6;
 
 }
 
@@ -44,9 +45,9 @@
 }
 
 
-/* body {
-    font-family: 'Kudry', sans-serif;
-} */
+body {
+    overflow-x: hidden;
+}
 
 /* common settings which related with colors and background-colors, etc */
 
@@ -113,6 +114,11 @@
 .text-blue {
     color: var(--dark-blue);
 }
+
+.light-muted {
+    color: var(--light-muted);
+}
+
 
 /* common sizes */
 .w-40 {
@@ -207,6 +213,15 @@ h6 {
 
 .box-shadow-none {
     box-shadow: none !important;
+}
+
+.border-light {
+    border: solid white !important;
+}
+
+.border-light-gray {
+    border: solid var(--text-muted) !important;
+    opacity: 0.3;
 }
 
 
@@ -320,16 +335,9 @@ h6 {
     max-width: 80%;
 }
 
-/* Стили для списка удобств */
-.feature {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .feature-icon {
     background: #F4F4F4;
-    padding: 12px;
+    /* padding: 12px; */
     border-radius: 50%;
     font-size: 1.5rem;
     margin-right: 15px;
@@ -338,16 +346,6 @@ h6 {
     align-items: center;
     width: 50px;
     height: 50px;
-}
-
-.feature-title {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: var(--text-green);
-}
-
-.feature-text {
-    color: #666;
 }
 
 /* Кнопка */
@@ -486,3 +484,127 @@ h6 {
     background-color: transparent;
 }
 
+
+
+
+/* mobile versions */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .w-40 {
+        width: 40% !important;
+    }
+
+    .banner-mv {
+        background-image: url("../images/index/banner_mv.png");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+    .banner, .banner-hostel, .ideal-room {
+        height: 50vh;
+    }
+
+    .ideal-room-mv {
+        background-image: url('../images/index/ideal_room_mv.png');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .blur-bg {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    .btn-success, .btn-success-outline {
+        width: 100%;
+    }
+
+    .text-title {
+        font-size: 2rem;
+    }
+
+    .text-description {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 20px;
+        height: 20px;
+    }
+
+    .overlay-info {
+        bottom: 10px;
+        left: 10px;
+        padding: 10px;
+    }
+
+    .overlay-item {
+        font-size: 0.8rem;
+    }
+
+    .img-thumbnail {
+        width: 150px;
+        height: 75px;
+    }
+
+    .border-light {
+        border: solid white !important;
+    }
+}

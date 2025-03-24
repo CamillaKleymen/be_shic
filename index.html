@@ -33,25 +33,42 @@
 
 
 
-    <!-- banner  -->
-    <header
-        class="position-absolute top-0 start-0 w-100 px-4 py-3 d-flex justify-content-between align-items-center border-rounded rounded-5">
-        <div class="d-flex align-items-center">
+    <!-- header  -->
+    <header class="d-none d-md-block">
+        <div
+            class="position-absolute top-0 start-0 w-100 px-4 py-3 d-flex justify-content-between align-items-center border-rounded rounded-5">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-light border-0 fs-4">
+                    <i class="bi bi-list"></i>
+                </button>
+                <button class="btn btn-light ms-3 d-flex align-items-center rounded-4 px-5 py-2">
+                    <i class="bi bi-globe me-2 fs-2"></i> EN
+                </button>
+            </div>
+            <a href="#" class="text-decoration-none text-light text-center">
+                <img src="images/index/logo.png" alt="Be Shic" class="h-25" width="120">
+            </a>
+            <button class="btn btn-light rounded-4 px-5 py-2 fs-4">Book Now</button>
+        </div>
+    </header>
+
+
+    <!-- header mv -->
+    <header>
+        <div
+            class="position-absolute top-0 start-0 w-100 px-4 py-3 d-flex justify-content-between align-items-center d-md-none">
             <button class="btn btn-outline-light border-0 fs-4">
                 <i class="bi bi-list"></i>
             </button>
-            <button class="btn btn-light ms-3 d-flex align-items-center rounded-4 px-5 py-2">
-                <i class="bi bi-globe me-2 fs-2"></i> EN
-            </button>
+            <!-- <img src="images/index/logo.png" alt="Be Shic" width="120"> -->
+            <button class="btn btn-light rounded-4 px-4 py-2 fs-6">Book Now</button>
         </div>
-        <a href="#" class="text-decoration-none text-light text-center">
-            <img src="images/index/logo.png" alt="Be Shic" class="h-25" width="120">
-        </a>
-        <button class="btn btn-light rounded-4 px-5 py-2 fs-4">Book Now</button>
     </header>
 
+
+    <!-- banner  -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-md-block">
             <div
                 class="d-flex flex-column banner justify-content-center align-items-center text-center p-4 border-rounded rounded-5">
                 <h1 class="fw-medium pt-5 mt-5">Welcome <br> to BeShic</h1>
@@ -63,59 +80,78 @@
                     <a href="#" class="blur-btn inactive rounded-3">Apart-Hotel</a>
                     <a href="#" class="blur-btn inactive rounded-3">Apartment</a>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- end of banner  -->
 
-    <!-- filter -->
-    <section class="search-section">
-        <div class="container-fluid mt-4">
+    <!-- mv banner -->
+    <section class="">
+        <div class="container-fluid d-md-none">
+            <div class="row">
+                <div
+                    class="d-flex flex-column banner-mv justify-content-center align-items-center text-center px-4 py-5">
+                    <img src="images/index/logo.png" alt="Be Shic" class="pb-4" width="140">
+                    <h1 class="fw-bold text-white">Welcome <br> to BeShic</h1>
+                    <p class="text-light w-75">
+                        Discover the Be Shic network of hostels, hotels, and apartments -
+                        a place where comfort, style, and affordability combine to create an unforgettable holiday.
+                    </p>
+                    <div class="d-flex gap-3 mt-4 px-3 py-3 rounded-4 bg-dark bg-opacity-50">
+                        <a href="#" class="btn btn-light rounded-3">Hostel</a>
+                        <a href="#" class="btn btn-outline-light rounded-3">Apart-Hotel</a>
+                        <a href="#" class="btn btn-outline-light rounded-3">Apartment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- filter desktop -->
+    <section class="search-section d-none d-md-block">
+        <div class="container-fluid mt-4 px-5">
             <div class="p-3 bg-green text-white rounded-4">
                 <form class="row g-2 align-items-center">
                     <div class="col-md-3">
                         <label class="form-label">House</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-light-green border-0 text-white"><i
+                        <div class="input-group bg-light-green border-4 rounded-3 border-light">
+                            <span class="input-group-text bg-transparent border-0 text-white py-3"><i
                                     class="bi bi-geo-alt"></i></span>
-                            <select class="form-select bg-transparent border-0 text-white">
+                            <select class="form-select border-0 text-white box-shadow-none bg-transparent">
                                 <option selected>Please choose</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <label class="form-label">Check-in</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-transparent border-0 text-white"><i
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0  text-white  bg-light-green py-3"><i
                                     class="bi bi-calendar"></i></span>
-                            <select class="form-select bg-transparent border-0 text-white">
-                                <option selected>Add dates</option>
-                            </select>
+                            <input type="date" class="form-control border-0 text-white bg-light-green box-shadow-none">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <label class="form-label">Check-out</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-transparent border-0 text-white"><i
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
                                     class="bi bi-calendar"></i></span>
-                            <select class="form-select bg-transparent border-0 text-white">
-                                <option selected>Add dates</option>
-                            </select>
+                            <input type="date" class="form-control border-0 text-white bg-light-green box-shadow-none">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label class="form-label">Guests</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-transparent border-0 text-white"><i
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
                                     class="bi bi-person"></i></span>
-                            <select class="form-select bg-transparent border-0 text-white">
+                            <select class="form-select border-0 text-white  bg-light-green box-shadow-none">
                                 <option selected>1 guest</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1 d-flex align-items-end">
-                        <button type="submit" class="btn btn-light rounded-4 w-100">Search</button>
+                    <div class="col-md-1 d-flex align-items-end justify-content-center pt-4">
+                        <button type="submit" class="btn btn-light py-3 rounded-4 w-100">Search</button>
                     </div>
                 </form>
             </div>
@@ -123,12 +159,60 @@
     </section>
     <!-- end of filter -->
 
+    <!-- filter mob version -->
+    <section class="search-section d-md-none">
+        <div class="container-fluid mt-4 px-5">
+            <div class="p-3 bg-green text-white rounded-4">
+                <form class="row g-2 align-items-center">
+                    <div class="col-md-3">
+                        <label class="form-label">House</label>
+                        <div class="input-group bg-light-green border-4 rounded-4 border-light">
+                            <span class="input-group-text bg-transparent border-0 text-white py-3"><i
+                                    class="bi bi-geo-alt"></i></span>
+                            <select class="form-select border-0 text-white box-shadow-none bg-transparent">
+                                <option selected>Please choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Check-in</label>
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0  text-white  bg-light-green py-3"><i
+                                    class="bi bi-calendar"></i></span>
+                            <input type="date" class="form-control border-0 text-white bg-light-green box-shadow-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Check-out</label>
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
+                                    class="bi bi-calendar"></i></span>
+                            <input type="date" class="form-control border-0 text-white bg-light-green box-shadow-none">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Guests</label>
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
+                                    class="bi bi-person"></i></span>
+                            <select class="form-select border-0 text-white  bg-light-green box-shadow-none">
+                                <option selected>1 guest</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-flex align-items-end justify-content-center pt-4">
+                        <button type="submit" class="btn btn-light py-2 rounded-4 w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <!-- companies we cooperated with  -->
+    <!-- companies we cooperated with | dc version  -->
     <section>
-        <div class="container-fluid">
-            <h4 class="text-blue mt-5 text-center fs-4 pt-2 pb-2">Companies we cooperate with</h4>
-            <div class="row row-cols-5 g-4">
+        <div class="container-fluid px-5 d-none d-md-block">
+            <h4 class="text-blue mt-5 text-center fs-4 pt-2 pb-4">Companies we cooperate with</h4>
+            <div class="row row-cols-5 g-4 align-items-center justify-content-center">
                 <div class="col">
                     <img src="images/index/test_comp.png" alt="booking" class="img-fluid w-50">
                 </div>
@@ -148,9 +232,34 @@
         </div>
     </section>
 
-    <!-- our offer  -->
+
+    <!-- companies we cooperated with | mv version  -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid px-5 d-md-none">
+            <h4 class="text-blue mt-5 text-center fs-4 pt-2 pb-4">Companies we cooperate with</h4>
+            <div class="row row-cols-2 g-4 align-items-center justify-content-center">
+                <div class="col">
+                    <img src="images/index/test_comp.png" alt="booking" class="img-fluid w-100">
+                </div>
+                <div class="col">
+                    <img src="images/index/test_comp2.png" alt="airbnb" class="img-fluid w-100">
+                </div>
+                <div class="col">
+                    <img src="images/index/test_comp3.png" alt="tripadvisor" class="img-fluid w-100">
+                </div>
+                <div class="col">
+                    <img src="images/index/test_comp4.png" alt="expedia" class="img-fluid w-100">
+                </div>
+                <div class="col">
+                    <img src="images/index/test_comp5.png" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our offer | dv version -->
+    <section>
+        <div class="container-fluid d-none d-md-block">
             <div class="row justify-content-center text-start mt-5 px-3 mb-5">
                 <div class="col-lg-6">
                     <h2 class="text-gray fw-medium px-5 display-2">At Be Shic we <span class="text-beige fw-medium"> to
@@ -175,10 +284,36 @@
         </div>
     </section>
 
+    <!-- our offer | mv version -->
+    <section>
+        <div class="container-fluid d-md-none">
+            <div class="row justify-content-center text-start mt-5 px-0 mb-5">
+                <div class="mb-2">
+                    <h2 class="text-gray fw-medium px-2 display-2">At Be Shic we <span class="text-beige fw-medium"> to
+                            suit all your needs
+                            offer three types of accommodation</span> to suit all your needs.</h2>
+                </div>
+                <div class="px-3">
+                    <div class="fs-5 fw-normal text-green">
+                        <p>Looking for a place to meet like-minded people and make new friends over a cup of
+                            coffee? Stay at <span class="text-green fw-bolder">Be Shic Hostel</span> for a friendly,
+                            social atmosphere.</p>
+                        <p> Looking for an inspiring and relaxing stay in a unique <span class="text-green fw-bolder">
+                                boutique hotel</span>? Then Be Shic is the
+                            place for you</p>
+                        <p>Want to feel like a local and enjoy premium accommodation? <span
+                                class="text-green fw-bolder">
+                                Be Shic Living </span> offers
+                            private, serviced micro-apartments for longer stays</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- choice for everyone -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-md-block">
             <div class="d-flex flex-column justify-content-end px-5 align-items-end p-4">
                 <h2 class="text-gray fw-bold  text-start w-40">Our company provides <span
                         class="text-beige fw-bold">choice for everyone</span></h2>
@@ -223,12 +358,58 @@
         </div>
     </section>
 
+    <!-- choice for everyone | mv version -->
+    <section>
+        <div class="container-fluid d-md-none">
+            <div class="d-flex flex-column justify-content-end pt-5 mt-5 align-items-end p-4">
+                <h2 class="text-gray fw-bold  text-start">Our company provides <span class="text-beige fw-bold">choice
+                        for everyone</span></h2>
+                <p class="text-green text-start w-40 fs-4 mt-4 fw-normal"> Choose any direction for yourself and for any
+                    budget</p>
+            </div>
 
-    <!-- # be shic hostels -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/index/hostel.png" alt="Hostel" class="card-img">
+                        <div class="card-overlay">
+                            <p class="text-white fs-2">Hostel</p>
+                            <p class="text-white fs-3"> +150 users</p>
+                            <div class="card-icon fs-1">➜</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="images/index/apart-hotel.png" alt="Apart-Hotel" class="card-img">
+                        <div class="card-overlay">
+                            <p class="text-white fs-2">Apart-Hotel</p>
+                            <p class="text-white fs-3"> +150 users</p>
+                            <div class="card-icon fs-1">➜</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="images/index/apartment.png" alt="Apartment" class="card-img">
+                        <div class="card-overlay">
+                            <p class="text-white fs-2">Apartment</p>
+                            <p class="text-white fs-3"><i class="bi bi-person"></i> +150 users</p>
+                            <div class="card-icon fs-1">➜</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- # be shic hostels | DESKTOP VERSION -->
 
     <!-- part 1 -->
     <!-- НУЖНО В КАРУСЕЛИ ОБЪЕДЕНИТЬ ТЕКСТ // ЛИБО ОТРЕДАЧИТЬ  -->
-    <section class="hostel-section">
+    <section class="hostel-section d-none d-md-block">
         <div class="container-fluid pt-5 mt-3">
             <div class="row px-5 align-items-center">
                 <div class="col-lg-6">
@@ -241,32 +422,32 @@
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-house-door"></i></span>
                             <div>
-                                <h5 class="feature-title">Shared and Private Rooms:</h5>
-                                <p class="feature-text">Choice between shared bedrooms and private rooms.</p>
+                                <h5 class="text-green VelaSans">Shared and Private Rooms:</h5>
+                                <p class="">Choice between shared bedrooms and private rooms.</p>
                             </div>
                         </div>
 
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-people"></i></span>
                             <div>
-                                <h5 class="feature-title">Common areas:</h5>
-                                <p class="feature-text">Cozy living rooms, shared kitchen and relaxation areas.</p>
+                                <h5 class="">Common areas:</h5>
+                                <p class="">Cozy living rooms, shared kitchen and relaxation areas.</p>
                             </div>
                         </div>
 
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-calendar-event"></i></span>
                             <div>
-                                <h5 class="feature-title">Guest activities:</h5>
-                                <p class="feature-text">Organized excursions, games and dating evenings.</p>
+                                <h5 class="">Guest activities:</h5>
+                                <p class="">Organized excursions, games and dating evenings.</p>
                             </div>
                         </div>
 
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-lock"></i></span>
                             <div>
-                                <h5 class="feature-title">Storage room:</h5>
-                                <p class="feature-text">A secure place to store personal belongings.</p>
+                                <h5 class="">Storage room:</h5>
+                                <p class="">A secure place to store personal belongings.</p>
                             </div>
                         </div>
 
@@ -309,7 +490,7 @@
 
     <!-- part 2 -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-md-block">
             <div class="row px-5 align-items-center">
                 <!-- left side with text -->
                 <div class="col-lg-6 position-relative">
@@ -404,7 +585,7 @@
 
     <!-- part 3 -->
     <section class="hostel-section">
-        <div class="container-fluid pt-5 mt-3">
+        <div class="container-fluid pt-5 mt-3 d-none d-md-block">
             <div class="row px-5 align-items-center">
                 <div class="col-lg-6">
                     <div class="text-content px-5 p-4">
@@ -415,32 +596,32 @@
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-house-door"></i></span>
                             <div>
-                                <h5 class="feature-title">Shared and Private Rooms:</h5>
-                                <p class="feature-text">Choice between shared bedrooms and private rooms.</p>
+                                <h5 class="">Shared and Private Rooms:</h5>
+                                <p class="">Choice between shared bedrooms and private rooms.</p>
                             </div>
                         </div>
 
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-people"></i></span>
                             <div>
-                                <h5 class="feature-title">Common areas:</h5>
-                                <p class="feature-text">Cozy living rooms, shared kitchen and relaxation areas.</p>
+                                <h5 class="">Common areas:</h5>
+                                <p class="">Cozy living rooms, shared kitchen and relaxation areas.</p>
                             </div>
                         </div>
 
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-calendar-event"></i></span>
                             <div>
-                                <h5 class="feature-title">Guest activities:</h5>
-                                <p class="feature-text">Organized excursions, games and dating evenings.</p>
+                                <h5 class="">Guest activities:</h5>
+                                <p class="">Organized excursions, games and dating evenings.</p>
                             </div>
                         </div>
 
                         <div class="feature">
                             <span class="feature-icon"><i class="bi bi-lock"></i></span>
                             <div>
-                                <h5 class="feature-title">Storage room:</h5>
-                                <p class="feature-text">A secure place to store personal belongings.</p>
+                                <h5 class="">Storage room:</h5>
+                                <p class="">A secure place to store personal belongings.</p>
                             </div>
                         </div>
 
@@ -480,10 +661,262 @@
         </div>
     </section>
 
+    <!-- # be shic hostels | MOBILE VERSION -->
 
-    <!-- book your ideal room -->
+    <!-- part 1 -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid pt-5 mt-3 d-md-none">
+            <div class="flex-column align-items-center px-2">
+                <div class="">
+                    <div class="text-content">
+                        <h2 class="fw-medium text-green display-4 ps-2">Be Shic <span
+                                class="text-beige fw-medium mt-3"><br>Hostels</span></h2>
+                        <p class="text-green fs-3 ps-2">For those looking for communication <br> and budget
+                            accommodation
+                            options.</p>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-house-door fs-1 text-green"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Shared and Private Rooms:</h5>
+                                <p class="">Choice between shared bedrooms and private rooms.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-people"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Common areas:</h5>
+                                <p class="">Cozy living rooms, shared kitchen and relaxation areas.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-calendar-event"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Guest activities:</h5>
+                                <p class="">Organized excursions, games and dating evenings.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-lock"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Storage room:</h5>
+                                <p class="">A secure place to store personal belongings.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-success w-40 mb-5">Book now</button>
+                    </div>
+                </div>
+
+                <div class="position-relative">
+                    <div class="slider h-100">
+                        <div>
+                            <img src="images/index/beShic.png" class="d-block w-100 rounded" alt="Hostel Image 1">
+                        </div>
+                        <div>
+                            <img src="images/index/beShic.png" class="d-block w-100 rounded" alt="Hostel Image 2">
+                        </div>
+                        <div>
+                            <img src="images/index/beShic.png" class="d-block w-100 rounded" alt="Hostel Image 3">
+                        </div>
+                    </div>
+
+                    <div class="overlay-info">
+                        <span class="text-white fs-4"><i class="bi bi-wifi"></i> Free Wi-Fi</span>
+                        <span class="text-white fs-4"><i class="bi bi-cup-hot"></i> Coffee and tea at any time</span>
+                    </div>
+                    <button type="button"
+                        class="slick-prev btn btn-light rounded-circle p-2 position-absolute top-50 start-0 translate-middle-y">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button"
+                        class="slick-next btn btn-light rounded-circle p-2 position-absolute top-50 end-0 translate-middle-y">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- part 2 -->
+    <section>
+        <div class="container-fluid pt-5 mt-3 d-md-none">
+            <div class="flex-column align-items-center px-2">
+                <div class="">
+                    <div class="text-content">
+                        <h2 class="fw-medium text-green display-4 ps-2">Be Shic <span
+                                class="text-beige fw-medium mt-3"><br>Apart-Hotels</span></h2>
+                        <p class="text-green fs-3 ps-2">For those who value <br> comfort and style.</p>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-house-door fs-1 text-green"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Variety of rooms: </h5>
+                                <p class="">From standard to luxury rooms with modern design</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-people"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Restaurant and cafe on site:</h5>
+                                <p class="">Breakfast, lunch and dinner </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-calendar-event"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Transfer from/to the airport: </h5>
+                                <p class="">Convenient service for our guests.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-lock"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Daily cleaning of rooms:</h5>
+                                <p class="">Maintaining cleanliness and comfort.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-success w-40 mb-5">Book now</button>
+                    </div>
+                </div>
+
+                <div class="position-relative">
+                    <div class="slider h-100">
+                        <div>
+                            <img src="images/index/apart-hotel.png" class="d-block w-100 rounded" alt="Hostel Image 1">
+                        </div>
+                        <div>
+                            <img src="images/index/apart-hotel.png" class="d-block w-100 rounded" alt="Hostel Image 2">
+                        </div>
+                        <div>
+                            <img src="images/index/apart-hotel.png" class="d-block w-100 rounded" alt="Hostel Image 3">
+                        </div>
+                    </div>
+
+                    <div class="overlay-info">
+                        <span class="text-white fs-4"><i class="bi bi-wifi"></i> Free Wi-Fi</span>
+                        <span class="text-white fs-4"><i class="bi bi-cup-hot"></i> Coffee and tea at any time</span>
+                    </div>
+                    <button type="button"
+                        class="slick-prev btn btn-light rounded-circle p-2 position-absolute top-50 start-0 translate-middle-y">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button"
+                        class="slick-next btn btn-light rounded-circle p-2 position-absolute top-50 end-0 translate-middle-y">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- part 3 -->
+    <section>
+        <div class="container-fluid pt-5 mt-3 d-md-none">
+            <div class="flex-column align-items-center px-2">
+                <div class="">
+                    <div class="text-content">
+                        <h2 class="fw-medium text-green display-4 ps-2">Be Shic <span
+                                class="text-beige fw-medium mt-3"><br>Apartments</span></h2>
+                        <p class="text-green fs-3 ps-2" For those who seek privacy and home comfort.</p>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-house-door fs-1 text-green"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Spacious living areas: </h5>
+                                <p class="">For relaxation and work</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-people"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Private entrances:</h5>
+                                <p class="">Privacy and seclusion for every guest</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-calendar-event"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Long Term Rentals: </h5>
+                                <p class="">Flexible terms for long term stays</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="feature-icon border-light-gray border-5 rounden-pill p-4"><i
+                                    class="bi bi-lock"></i></span>
+                            <div class="ps-4">
+                                <h5 class="text-green fw-bold VelaSans">Additional amenities:</h5>
+                                <p class="">Such as balconies, terraces or city views</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-success w-40 mb-5">Book now</button>
+                    </div>
+                </div>
+
+                <div class="position-relative">
+                    <div class="slider h-100">
+                        <div>
+                            <img src="images/index/apartmts.png" class="d-block w-100 rounded" alt="Hostel Image 1">
+                        </div>
+                        <div>
+                            <img src="images/index/apartmts.png" class="d-block w-100 rounded" alt="Hostel Image 2">
+                        </div>
+                        <div>
+                            <img src="images/index/apartmts.png" class="d-block w-100 rounded" alt="Hostel Image 3">
+                        </div>
+                    </div>
+
+                    <div class="overlay-info">
+                        <span class="text-white fs-4"><i class="bi bi-wifi"></i> Free Wi-Fi</span>
+                        <span class="text-white fs-4"><i class="bi bi-cup-hot"></i> Coffee and tea at any time</span>
+                    </div>
+                    <button type="button"
+                        class="slick-prev btn btn-light rounded-circle p-2 position-absolute top-50 start-0 translate-middle-y">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button"
+                        class="slick-next btn btn-light rounded-circle p-2 position-absolute top-50 end-0 translate-middle-y">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- book your ideal room | DV -->
+    <section>
+        <div class="container-fluid mt-5 pt-5 d-none d-md-block">
             <div class="ideal-room flex-column px-5 mx-5 rounded-5">
                 <div class="flex-column d-flex justify-content-center align-items-center">
                     <h2 class="text-white display-4 w-50"> Book your ideal room at Be Shic
@@ -511,9 +944,40 @@
         </div>
     </section>
 
-    <!-- network of modern hostels -->
+
+    <!-- book your ideal room | MV -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid mt-5 pt-5 d-md-none">
+            <div class="ideal-room-mv flex-column  rounded-5">
+                <div class="flex-column d-flex justify-content-center align-items-center">
+                    <h2 class="text-white"> Book your ideal room at Be Shic
+                        today and discover comfort, style
+                        and coziness in the heart of the city.</h2>
+                    <p class="fs-5 px-3 mt-4 text-white"> Choose from a variety of comfortable rooms and enjoy
+                        first-class service.
+                        Whether it's a short visit or an extended
+                        stay, you'll find your second home at Be Shic</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="position-relative d-flex">
+                        <img src="images/index/avatar.png" class="avatar rounded-circle border border-white">
+                        <img src="images/index/avatar2.png" class="avatar rounded-circle border border-white">
+                        <img src="images/index/avatar3.png" class="avatar rounded-circle border border-white">
+                        <img src="images/index/avatar4.png" class="avatar rounded-circle border border-white">
+                        <img src="images/index/avatar6.png" class="avatar rounded-circle border border-white">
+                        <img src="images/index/avatar7.png" class="avatar rounded-circle border border-white">
+                    </div>
+
+                </div>
+                <p class="ms-3 mt-3 fs-5 text-white fw-normal">already 1000+ people are with us</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- network of modern hostels {desktop version} -->
+    <section>
+        <div class="container-fluid d-none d-md-block">
             <div class="row justify-content-center text-start mt-5 pt-5 px-3 mb-5">
                 <div class="col-lg-6">
                     <h2 class="text-green display-3 fw-bold px-5"> Be Shic is a network of
@@ -538,9 +1002,103 @@
         </div>
     </section>
 
-    <!-- frequently asked questions  -->
+    <!-- network of modern hostels {mobile version}  -->
     <section>
+        <div class="container-fluid d-md-none">
+            <div class="row justify-content-center text-start mt-5 pt-5 mb-5">
+                <div class="col-6">
+                    <h2 class="text-green display-3 fw-bold"> Be Shic is a network of
+                        modern hostels, hotels and
+                        apartments <span class="text-beige"> created for
+                            those who value comfort,
+                            style and affordability.</span></h2>
+                </div>
+                <div class="col-6">
+                    <div class="fs-5 fw-normal text-green">
+                        <p>We pride ourselves on our properties being located in key locations in the city, allowing
+                            guests to easily explore the area and enjoy all its charms. At Be Shic you will find not
+                            only
+                            comfortable rooms, but also a friendly atmosphere that will make your stay truly
+                            memorable.</p>
+                        <p> Our mission is to create a home away from home experience for every guest, providing an
+                            impeccable environment for relaxation and work.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- useful articls {desktop version} -->
+    <section class="">
         <div class="container-fluid">
+            <h2 class="text-muted">Useful articles <span class="text-beige">for you</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <a href="#">
+                                <div class="card shadow-sm rounded-4 border-0">
+                                    <img src="images/index/usef_art.png" class="card-img-top rounded-4 w-100 h-100" alt="Building">
+                                    <!-- <div class="card-body">
+                                        <h5 class="card-title">Useful articles for you</h5>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div> -->
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#">
+                                <div class="card shadow-sm rounded-4 border-0">
+                                    <img src="images/index/5_things.png" class="card-img-top rounded-4 w-100 h-100" alt="Building">
+                                    <!-- <div class="card-body">
+                                        <h5 class="card-title">Useful articles for you</h5>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div> -->
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#">
+                                <div class="card shadow-sm rounded-4 border-0">
+                                    <img src="images/index/artic.png" class="card-img-top rounded-4" alt="Building">
+                                    <!-- <div class="card-body">
+                                        <h5 class="card-title">Useful articles for you</h5>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card position-relative border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <div class="card-body position-absolute top-0 start-0 text-white p-3">
+                                <h5 class="mb-0 VelaSans">Why is it important to <br> feel at home when <br> traveling?</h5>
+                            </div>
+                            <img src="images/index/import.png" class="card-img-top rounded-4 w-100" height="83%" alt="Cozy Home">
+                            <span class="position-absolute top-0 end-0 m-3 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                                &#8599;
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СВЕРСТАТЬ МОБИЛКУ ПОЛЕЗНЫХ СТАТЕЙ -->
+
+
+
+    
+
+
+    <!-- frequently asked questions {desktop version}  -->
+    <section>
+        <div class="container-fluid d-none d-md-block">
             <div class="flex-column justify-content-center text-start mt-5 pt-5 px-3 mb-5">
                 <h2 class="text-green display-4 fw-bold px-5"> Frequently asked <span class="text-beige fw-medium"><br>
                         questions</span></h2>
@@ -610,9 +1168,83 @@
         </div>
     </section>
 
-    <!-- Feedback from our client -->
+
+    <!-- frequently asked questions {mobile version}  -->
+    <section>
+        <div class="container-fluid d-md-none">
+            <div class="flex-column justify-content-center text-start mt-5 pt-5 px-2 mb-5">
+                <h2 class="text-green display-4 fw-bold px-2"> Frequently asked <span class="text-beige fw-medium"><br>
+                        questions</span></h2>
+                <div class="accordion text-start px-2" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header VelaSans text-green fw-bold">
+                            <button class="accordion-button fw-bold fs-5  text-green" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                How to book a room?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body fw-medium">
+                                You can book a room through our website, choosing convenient dates and
+                                type of accommodation. Booking by phone or via messengers is also available
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header VelaSans text-green fw-bold">
+                            <button class="accordion-button fw-bold fs-5  text-green" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                How to book a room?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can book a room through our website, choosing convenient dates and
+                                type of accommodation. Booking by phone or via messengers is also available
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header VelaSans text-green fw-bold">
+                            <button class="accordion-button fw-bold fs-5  text-green" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                How to book a room?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can book a room through our website, choosing convenient dates and
+                                type of accommodation. Booking by phone or via messengers is also available
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header VelaSans text-green fw-bold">
+                            <button class="accordion-button fw-bold fs-5  text-green" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                How to book a room?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can book a room through our website, choosing convenient dates and
+                                type of accommodation. Booking by phone or via messengers is also available
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback from our client {desktop} -->
     <section class="py-5">
-        <div class="container-fluid px-5">
+        <div class="container-fluid px-5 d-none d-md-block">
             <div class="row justify-content-center px-5">
                 <div class="col-12 text-center">
                     <h2 class="display-5 fw-bold text-gray mb-4">
@@ -678,6 +1310,76 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Feedback from our client {mobile version} -->
+    <section class="py-5">
+        <div class="container-fluid px-5 d-md-none">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold text-gray mb-4">
+                        Feedback from <span class="text-green">our client</span>
+                    </h2>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="ms-5 p-5 bg-green text-white rounded-4 position-relative w-75">
+                        <div class="position-absolute start-0 top-0 ms-4 mt-4">
+                            <span class="fs-1 text-white opacity-25">"</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="images/index/avatar.png" class="rounded-circle me-3" width="50" height="50"
+                                alt="Alex">
+                            <p class="fs-2 text-white fw-bold mb-0">Alex</p>
+                        </div>
+
+                        <p class="mb-3 text-white">
+                            I stayed at Be Shic on my last trip and it was unforgettable! The rooms were clean and
+                            comfortable, the staff was friendly and always ready to help.
+                        </p>
+                        <p class="mb-3 text-white">
+                            Thanks to the convenient location, I was able to easily explore the city and enjoy its
+                            beauty.
+                        </p>
+                        <p class="mb-0 text-white">
+                            I will definitely come back here again and recommend it to my friends.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-flex flex-column justify-content-start">
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex">
+                            <img src="images/index/avatar.png" class="rounded-circle border border-white"
+                                style="width: 30px; height: 30px; z-index: 7;">
+                            <img src="images/index/avatar.png" class="rounded-circle border border-white"
+                                style="width: 30px; height: 30px; margin-left: -10px; z-index: 6;">
+                            <img src="images/index/avatar.png" class="rounded-circle border border-white"
+                                style="width: 30px; height: 30px; margin-left: -10px; z-index: 5;">
+                            <img src="images/index/avatar.png" class="rounded-circle border border-white"
+                                style="width: 30px; height: 30px; margin-left: -10px; z-index: 4;">
+                            <img src="images/index/avatar.png" class="rounded-circle border border-white"
+                                style="width: 30px; height: 30px; margin-left: -10px; z-index: 3;">
+                        </div>
+                        <span class="ms-3 small">more than 100+ client reviews</span>
+                    </div>
+
+                    <!-- Кнопки навигации -->
+                    <div class="d-flex justify-content-end mt-4">
+                        <button class="btn btn-outline-dark rounded-circle me-2"
+                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-dark rounded-circle"
+                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
 
 
     <!-- contact form -->
