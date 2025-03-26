@@ -32,29 +32,70 @@
 <body>
 
 
-    <!-- header -->
+    <!-- Header  {desktop version}-->
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-md-block">
             <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                <!-- Logo -->
                 <div>
                     <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
                 </div>
 
-                <div class="d-flex align-items-center">
-                    <select class="form-select border-gray me-2 rounded-4">
+                <!-- Language & Currency Selectors with Close Button -->
+                <div class="d-flex align-items-center bg-white  px-2 py-1 w-25">
+                    <!-- Language Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
                         <option selected>English</option>
                         <option>Русский</option>
                         <option>Français</option>
                     </select>
 
-                    <select class="form-select border-gray me-3 rounded-4">
+                    <!-- Currency Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
                         <option selected>USD</option>
                         <option>EUR</option>
                         <option>RUB</option>
                     </select>
 
-                    <button class="btn btn-light rounded-3 d-flex align-items-center justify-content-center p-0">
-                        <i class="bi bi-x fs-1 text-dark"></i>
+                    <!-- Close Button -->
+                    <button
+                        class="btn button-light d-flex align-items-center justify-content-center rounded-3 border-0 p-2 ms-2">
+                        <i class="bi bi-x text-dark fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header {mobile version} -->
+    <header>
+        <div class="container-fluid d-md-none">
+            <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                <!-- Logo -->
+                <div>
+                    <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
+                </div>
+
+                <!-- Language & Currency Selectors with Close Button -->
+                <div class="d-flex align-items-center bg-white py-1 w-100">
+                    <!-- Language Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>English</option>
+                        <option>Русский</option>
+                        <option>Français</option>
+                    </select>
+
+                    <!-- Currency Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>RUB</option>
+                    </select>
+
+                    <!-- Close Button -->
+                    <button
+                        class="btn button-light d-flex align-items-center justify-content-center rounded-3 border-0 p-2 ms-2">
+                        <i class="bi bi-x text-dark fs-4"></i>
                     </button>
                 </div>
             </div>
@@ -87,7 +128,8 @@
                         <div class="border-1 border-dark rounded-4">
                             <div class="input-group rounded-4 border-gray">
                                 <i class="bi bi-calendar3 fs-2 mt-1 ps-3 me-3"></i>
-                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none" placeholder="Add dates">
+                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none"
+                                    placeholder="Add dates">
                             </div>
                         </div>
                     </div>
@@ -97,7 +139,8 @@
                         <div class="border-1 border-dark rounded-4">
                             <div class="input-group rounded-4 border-gray">
                                 <i class="bi bi-calendar3 fs-2 mt-1 ps-3 me-3"></i>
-                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none" placeholder="Add dates">
+                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none"
+                                    placeholder="Add dates">
                             </div>
                         </div>
                     </div>
@@ -274,8 +317,8 @@
     <!-- Footer -->
     <footer class="bg-green text-white py-5 rounded-top">
         <div class="container-fluid">
-            <div class="row px-4 py-3 d-flex align-items-center">
-                <div class="col-md-4">
+            <div class="flex-column px-4 py-3 d-flex align-items-start">
+                <div class="col">
                     <div class="me-4">
                         <img src="images/index/be_shic_logo_footer.png" alt="BeShic Logo" class="img-fluid w-25 mb-4">
                     </div>
@@ -283,27 +326,27 @@
                     <p class="text-white mb-0">Our mission is to create a home away from home experience for every
                         guest, providing an impeccable environment for relaxation and work.</p>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col"></div>
 
-                <div class="col-md-2 d-flex justify-content-end align-items-end">
-                    <a href="#" class="d-flex rounded-circle justify-content-center align-items-center">
-                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                <div class="col w-50 mt-3 d-flex justify-content-start align-items-start">
+                    <a href="#" class="d-flex rounded-circle justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid w-100 pe-2" alt="Instagram">
                     </a>
-                    <a href="#" class="d-flex justify-content-center align-items-center">
-                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    <a href="#" class="d-flex justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2 w-100" alt="Instagram">
                     </a>
-                    <a href="#" class="d-flex justify-content-center align-items-center">
-                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    <a href="#" class="d-flex justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2 w-100" alt="Instagram">
                     </a>
-                    <a href="#" class="d-flex justify-content-center align-items-center">
-                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2" alt="Instagram">
+                    <a href="#" class="d-flex justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2 w-100" alt="Instagram">
                     </a>
                 </div>
 
             </div>
 
-            <div class="row bg-footer mt-4">
-                <div class="col-md-6 d-flex justify-content-start">
+            <div class="flex-column bg-footer mt-4 justify-content-start align-items-start">
+                <div class="col d-flex justify-content-start">
                     <div class="ps-5">
                         <h5 class="fw-bold mb-3">Main page</h5>
                         <ul class="list-unstyled ">
@@ -315,13 +358,12 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col">
                     <div class=" text-end pe-5">
                         <h3 class="fw-bold mb-3">Contacts</h3>
                         <p class="text-white mb-1">asulevasadbek@gmail.com</p>
                         <p class="text-white">998 99 198 08 88</p>
                     </div>
-
                 </div>
             </div>
         </div>

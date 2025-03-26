@@ -387,19 +387,27 @@ h6 {
     border: 2px solid var(--text-green);
 }
 
-/* .btn-light {
+.button-light {
     width: 36px; 
     height: 36px; 
     color: gray; 
     border-color: gray;
   
-} */
+}
 
-.button-light :hover {
+.button-light:hover {
+    background: var(--form-gray);
+    color: var(--text-muted);
+    border: 2px solid var(--text-muted);
+}
+
+
+
+/* .button-light :hover {
     background: #CCD6D6;
     color: var(--text-green);
     border: 2px solid var(--text-green);
-}
+} */
 
 /* Стили карусели */
 .carousel-inner img {
