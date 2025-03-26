@@ -15,7 +15,7 @@
     --form-gray: #D0D5DD;
     --light-green: #335A59; 
     --light-muted: #E6E6E6;
-
+    --green-muted: #CCD6D6;
 }
 
 /* for titles */
@@ -88,7 +88,7 @@ body {
 
 
 .text-white {
-    color: var(--text-white);
+    color: var(--text-white) !important;
 }
 
 .text-dark {
@@ -118,7 +118,13 @@ body {
 .light-muted {
     color: var(--light-muted);
 }
+.bg-light-green {
+    background: var(--light-green);
+}
 
+.bg-light-gr {
+    background: var(--green-muted);
+}
 
 /* common sizes */
 .w-40 {
@@ -556,13 +562,19 @@ h6 {
     }
 
     .avatar {
-        width: 50px;
-        height: 50px;
-        margin-left: 0;
+        width: 70px;
+        height: 70px;
+        position: relative;
+        z-index: 6;
+        margin-left: -15px;
     }
 
     .btn-success, .btn-success-outline {
         width: 100%;
+    }
+
+    .text-white {
+        color: var(--text-white) !important;
     }
 
     .text-title {
