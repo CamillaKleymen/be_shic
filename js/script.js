@@ -38,3 +38,10 @@ $(document).ready(function () {
     ],
   });
 });
+
+
+// function changeImage(element) {
+//   document.getElementById("mainImage").src = element.src;
+//   document.querySelectorAll(".thumb").forEach(img => img.classList.remove("border-primary", "border-3"));
+//   element.classList.add("border-primary", "border-3");
+// }
