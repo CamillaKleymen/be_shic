@@ -32,31 +32,70 @@
 <body>
 
 
-    <!-- Header -->
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-md-block">
             <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                <!-- Logo -->
                 <div>
                     <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
                 </div>
 
-                <div class="d-flex align-items-center">
-                    <select class="form-select border-gray me-2 rounded-4">
+                <!-- Language & Currency Selectors with Close Button -->
+                <div class="d-flex align-items-center bg-white  px-2 py-1 w-25">
+                    <!-- Language Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
                         <option selected>English</option>
                         <option>Русский</option>
                         <option>Français</option>
                     </select>
 
-                    <select class="form-select border-gray me-3 rounded-4">
+                    <!-- Currency Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
                         <option selected>USD</option>
                         <option>EUR</option>
                         <option>RUB</option>
                     </select>
 
-                    <button class="btn btn-light rounded-3 d-flex align-items-center justify-content-center p-0">
-                        <i class="bi bi-x fs-1 text-green"></i>
+                    <!-- Close Button -->
+                    <button
+                        class="btn button-light d-flex align-items-center justify-content-center rounded-3 border-0 p-2 ms-2">
+                        <i class="bi bi-x text-dark fs-4"></i>
                     </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- header {mobile version} -->
+    <header>
+        <div class="container-fluid d-md-none">
+            <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                <!-- Logo -->
+                <div>
+                    <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
+                </div>
+
+                <!-- Language & Currency Selectors with Close Button -->
+                <div class="d-flex align-items-center bg-white py-1 w-100">
+                    <!-- Language Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>English</option>
+                        <option>Русский</option>
+                        <option>Français</option>
+                    </select>
+
+                    <!-- Currency Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>RUB</option>
+                    </select>
+
+                    <!-- Close Button -->
+                    <button
+                        class="btn button-light d-flex align-items-center justify-content-center rounded-3 border-0 p-2 ms-2">
+                        <i class="bi bi-x text-dark fs-4"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -66,90 +105,138 @@
     <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb" class="mb-2 mt-4">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted fs-2 ps-5">Home-Booking</a>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted fs-3 ps-5">Home-Booking</a>
             </li>
         </ol>
     </nav>
 
 
     <!-- filter -->
-    <section class="px-5">
-        <div class="container-fluid mt-4 mb-5 px-5">
-            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                <div class="me-2">
-                    <label class="fw-bold">House</label>
-                    <select class="form-select">
-                        <option selected>Please choose</option>
-                        <option selected>Please choose</option>
-                        <option selected>Please choose</option>
-                        <option selected>Please choose</option>
-                    </select>
-                </div>
-                <div class="me-2">
-                    <label class="fw-bold">Check-in</label>
-                    <input type="date" class="form-control">
-                </div>
-                <div class="me-2">
-                    <label class="fw-bold">Check-out</label>
-                    <input type="date" class="form-control">
-                </div>
-                <div class="me-2">
-                    <label class="fw-bold">Guests</label>
-                    <select class="form-select">
-                        <option selected>1 guest</option>
-                        <option selected>2 guests</option>
-                        <option selected>3 guests</option>
-                        <option selected>4 guests</option>
-                        <option selected>5 guests</option>
-                    </select>
-                </div>
-                <div>
-                    <button class="btn btn-success px-4 py-3">Search →</button>
+    <section>
+        <div class="container-fluid mt-4">
+            <div class="p-3 rounded px-5 bg-light">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-3">
+                        <label class="form-label fs-3 text-green fw-semibold">House</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-geo-alt fs-2 mt-1 ps-3 me-3"></i>
+                                <select class="form-select rounded-4 border-0 box-shadow-none">
+                                    <option selected>Please choose</option>
+                                    <option>House 1</option>
+                                    <option>House 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label fs-3 text-green fw-semibold">Check-in</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-calendar3 fs-2 mt-1 ps-3 me-3"></i>
+                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none"
+                                    placeholder="Add dates">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label fs-3 text-green fw-semibold">Check-out</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-calendar3 fs-2 mt-1 ps-3 me-3"></i>
+                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none"
+                                    placeholder="Add dates">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="form-label fs-3 text-green fw-semibold">Guests</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-person fs-2 mt-1 ps-3 me-3"></i>
+                                <select class="form-select border-0 rounded-4 box-shadow-none">
+                                    <option selected>1 guest</option>
+                                    <option>2 guests</option>
+                                    <option>3 guests</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 d-flex align-items-center">
+                        <button class="btn btn-success rounded-4 mt-5 py-3 px-4 w-100">Search</button>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
-    <!-- end of filter -->
 
 
-    <!-- hero section -->
-    <section class="py-5 bg-light">
+    <!-- hero section {desctop version}-->
+    <section class="py-5 bg-light d-none d-md-block">
         <div class="container-fluid px-5">
-            <h2 class="fw-bold text-green fs-1 VelaSans mb-3">General information</h2>
-            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mt-4 p-4">
+            <h2 class="fw-bold text-green fs-1 VelaSans mb-3">Select additional services</h2>
+            <p class="text-muted fs-5">Please read the <br> License Agreement and Privacy Policy</p>
+            <p class="text-muted fs-5">Everything on our site is confidential</p>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mt-4">
                 <div class="row g-0 align-items-center">
-                    <div class="col-md-3">
-                        <img src="images/additional_services/solo_room.png" class="img-fluid w-100 rounded-4"
+                    <div class="col-md-2">
+                        <img src="images/additional_services/solo_room.png" class="img-fluid w-100 h-100"
                             alt="Solo Room">
                     </div>
-                    <div class="col-md-7 ps-5">
-                        <h5 class="fw-bold text-green VelaSans">Solo Room with Shared Bathroom</h5>
-                        <p class="text-muted fs-5 mb-2"><i class="bi bi-person me-2 fs-4"></i> Maximum person: 1</p>
-                        <p class="fw-bold fs-4 text-muted mb-1">Price: <span class="text-green">60.00 $</span></p>
-                        <p class="text-muted fs-6">per room / nightly</p>
+                    <div class="col-md-8 ps-5">
+                        <h5 class="fw-bold text-green VelaSans">Entire accommodation, Tashkent, Uzbekistan</h5>
+                        <p class="text-muted fw-normal fs-5"><i class="bi bi-person me-2 fs-4"></i> 5 guests 3 bedrooms
+                            3 beds 1 bathroom</p>
+                        <p class="fw-bold text-green fs-4">Dates 28-29 Mar. </p>
+                        <p class="fw-bold fs-4  text-muted mb-1">Price: <span class="text-green">60.00 $</span></p>
+                        <p class="text-muted fs-6 mb-2">per room / nightly</p>
 
-                        <div class="d-flex flex-wrap gap-4 mb-3">
-                            <span class="badge bg-white text-green border rounded-4 px-3 fs-5 py-4 shadow"><i
-                                    class="bi bi-wifi me-2 fs-4"></i> Free Wi-Fi</span>
-                            <span class="badge bg-white text-green border rounded-4 px-3 fs-5 py-4 shadow"><i
-                                    class="bi bi-display me-2 fs-4"></i> TV</span>
-                            <span class="badge bg-white text-green border rounded-4 px-3 fs-5 py-4 shadow"><i
-                                    class="bi bi-thermometer-sun me-2 fs-4"></i> Conditioner</span>
-                        </div>
-                        <p class="text-muted fs-6 mb-2">Additional services</p>
-                        <span
-                            class="badge bg-white text-green border rounded-4 px-4 py-3 fs-5 shadow d-inline-flex align-items-center">
-                            <i class="bi bi-box-seam me-2 fs-4 py-2"></i> Ready-made food
-                        </span>
+                        <button class="btn btn-success py-3 px-2 w-100 rounded-4 mt-0">Show rates</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- hero section {desctop version}-->
+    <section class="py-5 bg-light d-md-none">
+        <div class="container-fluid px-5">
+            <h2 class="fw-bold text-green fs-1 VelaSans mb-3">Select additional services</h2>
+            <p class="text-muted fs-5">Please read the <br> License Agreement and Privacy Policy</p>
+            <p class="text-muted fs-5">Everything on our site is confidential</p>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mt-4">
+                <div class="flex-column g-0 align-items-center">
+                    <div class="col">
+                        <img src="images/additional_services/solo_room.png" class="img-fluid w-100 h-100"
+                            alt="Solo Room">
+                    </div>
+                    <div class="col">
+                        <h5 class="fw-bold text-green VelaSans mt-3">Entire accommodation, Tashkent, Uzbekistan</h5>
+                        <p class="text-muted fw-normal fs-5"><i class="bi bi-person me-2 fs-4"></i> 5 guests 3 bedrooms
+                            3 beds 1 bathroom</p>
+                        <p class="fw-bold text-green fs-4">Dates 28-29 Mar. </p>
+                        <p class="fw-bold fs-4  text-muted mb-1">Price: <span class="text-green">60.00 $</span></p>
+                        <p class="text-muted fs-6 mb-2">per room / nightly</p>
+
+                        <button class="btn btn-success py-3 px-2 w-100 rounded-4 mt-0">Show rates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- tarrifs -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light d-none d-md-block">
         <div class="container-fluid px-5">
             <h2 class="fw-bold text-green fs-1 VelaSans mb-3">Tariffs</h2>
             <div class="card border-0 shadow-sm rounded-4 overflow-hidden p-4">
@@ -188,6 +275,100 @@
         </div>
     </section>
 
+    <!-- tarrifs {mobile} -->
+    <section class="py-5 bg-light d-md-none">
+        <div class="container-fluid">
+            <h2 class="fw-bold text-green fs-1 ps-2 VelaSans mb-3">Tariffs</h2>
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                        <h5 class="fw-bold text-green VelaSans">Bed in Squad (8) + Today`s Rate - Non Refundable</h5>
+                        <p class="text-muted fs-6">1 × €32.00</p>
+                    </div>
+                    <p class="fw-bold text-green fs-4">60.00$</p>
+                </div>
+
+                <h6 class="fw-bold text-green VelaSans">Products and extras</h6>
+                <div class="d-flex justify-content-between">
+                    <p class="text-muted fs-6 mb-0">City Tax 2025</p>
+                    <p class="fw-bold text-green fs-5">2.40$</p>
+                </div>
+                <div class="d-flex justify-content-between text-muted">
+                    <p class="fs-6">2 × €1.20</p>
+                    <p class="fs-6">2.26$</p>
+                </div>
+
+                <h6 class="fw-bold text-green mt-3 VelaSans">MWST 7%</h6>
+                <div class="d-flex justify-content-between text-muted">
+                    <p class="fs-6">2.26$</p>
+                    <p class="fs-6">2.26$</p>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold text-green VelaSans">Total</h5>
+                    <h5 class="fw-bold text-green fs-3 VelaSans">80.40$</h5>
+                </div>
+                <p class="text-muted fs-6">per room / nightly</p>
+
+                <button class="btn btn-success w-100 py-3 mt-3 rounded-3">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  {mobile}-->
+    <footer class="bg-green text-white py-5 rounded-top d-md-none">
+        <div class="container-fluid">
+            <div class="flex-column px-4 py-3 d-flex align-items-start">
+                <div class="col">
+                    <div class="me-4">
+                        <img src="images/index/be_shic_logo_footer.png" alt="BeShic Logo" class="img-fluid w-25 mb-4">
+                    </div>
+
+                    <p class="text-white mb-0">Our mission is to create a home away from home experience for every
+                        guest, providing an impeccable environment for relaxation and work.</p>
+                </div>
+                <div class="col"></div>
+
+                <div class="col w-50 mt-3 d-flex justify-content-start align-items-start">
+                    <a href="#" class="d-flex rounded-circle justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid w-100 pe-2" alt="Instagram">
+                    </a>
+                    <a href="#" class="d-flex justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2 w-100" alt="Instagram">
+                    </a>
+                    <a href="#" class="d-flex justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2 w-100" alt="Instagram">
+                    </a>
+                    <a href="#" class="d-flex justify-content-start align-items-start">
+                        <img src="images/icons/instagram-icon.png" class="img-fluid pe-2 w-100" alt="Instagram">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="flex-column bg-footer mt-4 justify-content-start align-items-start">
+                <div class="col d-flex justify-content-start">
+                    <div class="ps-5">
+                        <h5 class="fw-bold mb-3">Main page</h5>
+                        <ul class="list-unstyled ">
+                            <li class="mb-2 fs-4"><a href="#" class="text-white text-decoration-none">Hostel</a></li>
+                            <li class="mb-2 fs-4"><a href="#" class="text-white text-decoration-none">Hotel</a></li>
+                            <li class="mb-2 fs-4"><a href="#" class="text-white text-decoration-none">Apartment</a></li>
+                        </ul>
+                        <p class="text-beige mt-5">© 2025 All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class=" text-end pe-5">
+                        <h3 class="fw-bold mb-3">Contacts</h3>
+                        <p class="text-white mb-1">asulevasadbek@gmail.com</p>
+                        <p class="text-white">998 99 198 08 88</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
