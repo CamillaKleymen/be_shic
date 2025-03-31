@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>additional</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/snow.min.css" rel="stylesheet">
+
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Header  {desktop version}-->
+    <header>
+        <div class="container-fluid d-none d-md-block">
+            <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                <!-- Logo -->
+                <div>
+                    <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
+                </div>
+
+                <!-- Language & Currency Selectors with Close Button -->
+                <div class="d-flex align-items-center bg-white  px-2 py-1 w-25">
+                    <!-- Language Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>English</option>
+                        <option>Русский</option>
+                        <option>Français</option>
+                    </select>
+
+                    <!-- Currency Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>RUB</option>
+                    </select>
+
+                    <!-- Close Button -->
+                    <button
+                        class="btn button-light d-flex align-items-center justify-content-center rounded-3 border-0 p-2 ms-2">
+                        <i class="bi bi-x text-dark fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header {mobile version} -->
+    <header>
+        <div class="container-fluid d-md-none">
+            <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                <!-- Logo -->
+                <div>
+                    <img src="images/booking/logo_header.png" alt="BeShic Logo" class="img-fluid w-50">
+                </div>
+
+                <!-- Language & Currency Selectors with Close Button -->
+                <div class="d-flex align-items-center bg-white py-1 w-100">
+                    <!-- Language Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>English</option>
+                        <option>Русский</option>
+                        <option>Français</option>
+                    </select>
+
+                    <!-- Currency Select -->
+                    <select class="form-select border-2 border-gray rounded-3 px-3">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>RUB</option>
+                    </select>
+
+                    <!-- Close Button -->
+                    <button
+                        class="btn button-light d-flex align-items-center justify-content-center rounded-3 border-0 p-2 ms-2">
+                        <i class="bi bi-x text-dark fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="mb-2 mt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted fs-3 ps-5">Home-Booking</a>
+            </li>
+        </ol>
+    </nav>
+
+
+    <!-- filter -->
+    <section>
+        <div class="container-fluid mt-4">
+            <div class="p-3 rounded px-5 bg-light">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-3">
+                        <label class="form-label fs-3 text-green fw-semibold">House</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-geo-alt fs-2 mt-1 ps-3 me-3"></i>
+                                <select class="form-select rounded-4 border-0 box-shadow-none">
+                                    <option selected>Please choose</option>
+                                    <option>House 1</option>
+                                    <option>House 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label fs-3 text-green fw-semibold">Check-in</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-calendar3 fs-2 mt-1 ps-3 me-3"></i>
+                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none"
+                                    placeholder="Add dates">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label fs-3 text-green fw-semibold">Check-out</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-calendar3 fs-2 mt-1 ps-3 me-3"></i>
+                                <input type="date" class="form-control border-0 rounded-4 box-shadow-none"
+                                    placeholder="Add dates">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="form-label fs-3 text-green fw-semibold">Guests</label>
+                        <div class="border-1 border-dark rounded-4">
+                            <div class="input-group rounded-4 border-gray">
+                                <i class="bi bi-person fs-2 mt-1 ps-3 me-3"></i>
+                                <select class="form-select border-0 rounded-4 box-shadow-none">
+                                    <option selected>1 guest</option>
+                                    <option>2 guests</option>
+                                    <option>3 guests</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 d-flex align-items-center">
+                        <button class="btn btn-success rounded-4 mt-5 py-3 px-4 w-100">Search</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- hero section {desctop version}-->
+    <section class="py-5 bg-light d-none d-md-block">
+        <div class="container-fluid px-5">
+            <h2 class="fw-bold text-green fs-1 VelaSans mb-3">Select additional services</h2>
+            <p class="text-muted fs-5">Please read the <br> License Agreement and Privacy Policy</p>
+            <p class="text-muted fs-5">Everything on our site is confidential</p>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mt-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-2">
+                        <img src="images/additional_services/soloRoom.png" class="img-fluid w-100 h-100"
+                            alt="Solo Room">
+                    </div>
+                    <div class="col-md-8 ps-5">
+                        <h5 class="fw-bold text-dark VelaSans">Solo Room with Shared Bathroom</h5>
+                        <p class="text-muted fs-5 mb-2"><i class="bi bi-person me-2"></i> Maximum person: 1</p>
+                        <p class="fw-bold fs-4 mt-5 text-muted mb-1">Price: <span class="text-green">60.00 $</span></p>
+                        <p class="text-muted fs-6">per room / nightly</p>
+
+                        <div class="d-flex flex-wrap gap-4 mb-3">
+                            <span class="badge bg-white text-dark border rounded-4 px-3 fs-5 py-4 shadow"><i
+                                    class="bi bi-wifi me-2 fs-4"></i> Free Wi-Fi</span>
+                            <span class="badge bg-white text-dark border rounded-4 px-3 fs-5 py-4 shadow"><i
+                                    class="bi bi-display me-2 fs-4"></i> TV</span>
+                            <span class="badge bg-white text-dark border rounded-4 px-3 fs-5 py-4 shadow"><i
+                                    class="bi bi-thermometer-sun me-2 fs-4"></i> Conditioner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- hero section {mobile version}-->
+    <section class="py-5 bg-light d-md-none">
+        <div class="container-fluid px-5">
+            <h2 class="fw-bold text-green fs-1 VelaSans mb-3">Select additional services</h2>
+            <p class="text-muted fs-5">Please read the <br> License Agreement and Privacy Policy</p>
+            <p class="text-muted fs-5">Everything on our site is confidential</p>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mt-4">
+                <div class="flex-column g-0 align-items-center">
+                    <div class="col">
+                        <img src="images/additional_services/soloRoom.png" class="img-fluid w-100 h-100"
+                            alt="Solo Room">
+                    </div>
+                    <div class="col">
+                        <h5 class="fw-bold text-green pt-4 VelaSans">Solo Room with Shared Bathroom</h5>
+                        <p class="text-muted fs-6 fw-normal mb-2"><i class="bi bi-person text-green fs-4 me-2"></i> Maximum person: 1</p>
+                        <p class="fw-bold fs-4 text-muted mb-1">Price: <span class="text-green">60.00 $</span></p>
+                        <p class="text-muted fs-6">per room / nightly</p>
+
+                        <div class="d-flex justify-content-between gap-2 mb-3">
+                            <span class="badge bg-white text-dark border rounded-4 px-3 fs-6 py-4 shadow"><i
+                                    class="bi bi-wifi me-2 fs-5"></i> Free Wi-Fi</span>
+                            <span class="badge bg-white text-dark border rounded-4 px-3 fs-6 py-4 shadow"><i
+                                    class="bi bi-display me-2 fs-5"></i> TV</span>
+                            <span class="badge bg-white text-dark border rounded-4 px-3 fs-6 py-4 shadow"><i
+                                    class="bi bi-thermometer-sun me-2 fs-5"></i> Conditioner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- additional services -->
+    <section>
+        <div class="container-fluid px-5">
+            <h2 class="fw-bold text-green fs-1 VelaSans">Additional services</h2>
+
+            <div class="d-flex justify-content-center mb-4">
+                <ul class="nav nav-pills nav-fill w-100 bg-light p-2 rounded-3 pt-4 pb-4" id="additionalServicesTab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="general-tab" data-bs-toggle="tab" href="#general"
+                            role="tab">General</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="excursions-tab" data-bs-toggle="tab" href="#excursions"
+                            role="tab">Excursions</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="car-rental-tab" data-bs-toggle="tab" href="#car-rental" role="tab">Car
+                            rental</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="additionalServicesTabContent">
+                <div class="tab-pane fade show active" id="general" role="tabpanel">
+                    <!-- services tab -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/towel.png" class="card-img-top" alt="Towel">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">Towel</h5>
+                                    <p class="text-muted fs-5">Lack of space or a small oversight?</p>
+                                    <p class="fw-bold mt-5 text-muted">Price: <span class="text-green">3.00 $</span></p>
+                                    <p class="fw-normal text-muted fs-6">For person</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Add <i
+                                            class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/parking.png" class="card-img-top" alt="Towel">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">Parking space for rent 5.1 m²</h5>
+                                    <p class="text-muted fs-5">Uzbekistan, Tashkent
+                                        Mirabad district</p>
+                                    <p class="fw-bold mt-5 text-muted">Price: <span class="text-green">20.00 $</span>
+                                    </p>
+                                    <p class="fw-normal text-muted fs-6">Per number of nights</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Added ✓</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/transfer.png" class="card-img-top" alt="Towel">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">Transfer</h5>
+                                    <p class="text-muted fs-5">From the airport to the Hostel and from the Hostel to the
+                                        Airport</p>
+                                    <p class="fw-bold mt-5 text-muted">Price: <span class="text-green">50.00 $</span>
+                                    </p>
+                                    <p class="fw-normal text-muted fs-6">Per number of nights</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Added ✓</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- excursions tab  -->
+                <div class="tab-pane fade" id="excursions" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/tashkent.png" class="card-img-top"
+                                    alt="Handsome Tashkent">
+                                <div class="card-body">
+                                    <h5 class="fw-bolder display-4 fs-3 text-green VelaSans mt-4 mb-3">"Handsome
+                                        Tashkent": auto-pedestrian
+                                        excursion</h5>
+                                    <p class="text-muted fs-5">Welcome to Tashkent, a city where the past meets the
+                                        future! We invite you to a fascinating tour that will reveal the soul of the
+                                        capital of Uzbekistan.</p>
+                                    <p class="text-muted fs-5">What awaits you?</p>
+                                    <p class="text-muted fs-5">Khast-Imam Square – the spiritual center of the city,
+                                        where the ancient Osman Koran is kept</p>
+                                    <p class="text-muted fs-5">Chorsu Bazaar – a colorful oriental market with the
+                                        aromas of spices and Uzbek delicacies</p>
+                                    <p class="text-muted fs-5">Amir Temur Square – the heart of Tashkent with a monument
+                                        to the great commander</p>
+                                    <p class="text-muted fs-5">Museum of Applied Arts – a unique collection of Uzbek
+                                        handicrafts</p>
+                                    <p class="text-muted fs-5">Modern Tashkent – ​​glass skyscrapers, futuristic parks
+                                        and new architectural masterpieces</p>
+                                    <p class="text-muted fs-5">Additionally:</p>
+                                    <p class="text-muted fs-5">Tasting Uzbek pilaf in the best teahouse</p>
+                                    <p class="text-muted fs-5">A ride on the famous Tashkent metro</p>
+                                    <p class="text-muted fs-5">An evening walk along the singing fountains</p>
+                                    <p class="text-muted fs-5">Duration: 4-6 hours</p>
+                                    <p class="text-muted fs-5">Format: walking and car excursion</p>
+                                    <p class="text-muted fs-5">Guide: a professional storyteller who will make the trip
+                                        unforgettable</p>
+                                    <p class="text-muted fs-5">Discover Tashkent in all its glory – from ancient
+                                        monuments to modern-day attractions!</p>
+                                    <p class="fw-bold mt-4 text-muted">Price: <span class="text-green">50.00 $</span>
+                                    </p>
+                                    <p class="fw-normal text-muted fs-6">Per person</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Added ✓</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/tashkent.png" class="card-img-top"
+                                    alt="Magical Samarkand">
+                                <div class="card-body">
+                                    <h5 class="fw-bolder display-4 fs-3 text-green VelaSans mt-4 mb-3">"Magical
+                                        Samarkand": day trip</h5>
+                                    <p class="text-muted fs-5">Experience the breathtaking beauty of Samarkand, one of
+                                        the most ancient cities in the world, filled with stunning architecture and rich
+                                        history.</p>
+                                    <p class="text-muted fs-5">What awaits you?</p>
+                                    <p class="text-muted fs-5">Khast-Imam Square – the spiritual center of the city,
+                                        where the ancient Osman Koran is kept</p>
+                                    <p class="text-muted fs-5">Chorsu Bazaar – a colorful oriental market with the
+                                        aromas of spices and Uzbek delicacies</p>
+                                    <p class="text-muted fs-5">Amir Temur Square – the heart of Tashkent with a monument
+                                        to the great commander</p>
+                                    <p class="text-muted fs-5">Museum of Applied Arts – a unique collection of Uzbek
+                                        handicrafts</p>
+                                    <p class="text-muted fs-5">Modern Tashkent – ​​glass skyscrapers, futuristic parks
+                                        and new architectural masterpieces</p>
+                                    <p class="text-muted fs-5">Additionally:</p>
+                                    <p class="text-muted fs-5">Tasting Uzbek pilaf in the best teahouse</p>
+                                    <p class="text-muted fs-5">A ride on the famous Tashkent metro</p>
+                                    <p class="text-muted fs-5">An evening walk along the singing fountains</p>
+                                    <p class="text-muted fs-5">Duration: 4-6 hours</p>
+                                    <p class="text-muted fs-5">Format: walking and car excursion</p>
+                                    <p class="text-muted fs-5">Guide: a professional storyteller who will make the trip
+                                        unforgettable</p>
+                                    <p class="text-muted fs-5">Discover Tashkent in all its glory – from ancient
+                                        monuments to modern-day attractions!</p>
+                                    <p class="fw-bold mt-4 text-muted">Price: <span class="text-green">70.00 $</span>
+                                    </p>
+                                    <p class="fw-normal text-muted fs-6">Per person</p>
+                                    <div class="row d-flex g-2 mt-2 align-content-center justify-content-center">
+                                        <button class="btn btn-success mt-0 w-50 py-3">Add <i
+                                                class="bi bi-plus-lg"></i></button>
+                                        <button class="btn btn-success-outline mt-0 w-50 py-3">Added ✓</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- car - rental tab -->
+                <div class="tab-pane fade" id="car-rental" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/byd.png" class="card-img-top"
+                                    alt="BYD Song Plus Hybrid">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">BYD Song Plus Hybrid</h5>
+                                    <p class="text-muted fs-5">Comfort+</p>
+                                    <p class="fw-bolder text-muted">Price: <span
+                                            class="fs-4 text-green fw-bold">1,300,000 UZS /
+                                            day</span></p>
+                                    <p class="fw-medium text-muted fs-6">Per person (per number of nights)</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Add <i
+                                            class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/byd.png" class="card-img-top"
+                                    alt="BYD Song Plus Hybrid">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">BYD Song Plus Hybrid</h5>
+                                    <p class="text-muted fs-5">Comfort+</p>
+                                    <p class="fw-bolder text-muted">Price: <span
+                                            class="fs-4 text-green fw-bold">1,300,000 UZS /
+                                            day</span></p>
+                                    <p class="fw-medium text-muted fs-6">Per person (per number of nights)</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Add <i
+                                            class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/byd.png" class="card-img-top"
+                                    alt="BYD Song Plus Hybrid">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">BYD Song Plus Hybrid</h5>
+                                    <p class="text-muted fs-5">Comfort+</p>
+                                    <p class="fw-bolder text-muted">Price: <span
+                                            class="fs-4 text-green fw-bold">1,300,000 UZS /
+                                            day</span></p>
+                                    <p class="fw-medium text-muted fs-6">Per person (per number of nights)</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Add <i
+                                            class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/additional_services/byd.png" class="card-img-top"
+                                    alt="BYD Song Plus Hybrid">
+                                <div class="card-body">
+                                    <h5 class="fw-bold fs-4 text-green VelaSans">BYD Song Plus Hybrid</h5>
+                                    <p class="text-muted fs-5">Comfort+</p>
+                                    <p class="fw-bolder text-muted">Price: <span
+                                            class="fs-4 text-green fw-bold">1,300,000 UZS /
+                                            day</span></p>
+                                    <p class="fw-medium text-muted fs-6">Per person (per number of nights)</p>
+                                    <button class="btn btn-success mt-0 w-100 py-3">Add <i
+                                            class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- tarrifs -->
+    <section class="bg-light py-4">
+        <div class="container-fluid px-5">
+            <h2 class="fw-bold mb-4">Tariffs</h2>
+            <div class="accordion" id="tariffAccordion">
+                <div class="accordion-item border-0 shadow-sm rounded-3 mb-3">
+                    <h2 class="fs-2 fw-bold text-green VelaSans" id="headingOne">
+                        <button class="accordion-button fw-bold bg-white text-green fs-2 shadow-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Today´s Rate - Non Refundable
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#tariffAccordion">
+                        <div class="accordion-body bg-white p-4">
+                            <p class="text-muted fs-5">You are sure to come as we are sure about our wish to welcome
+                                you!</p>
+                            <p class="text-muted fs-5">Breakfast is not included in this rate. You will be able to book
+                                it at the reception upon check-in.</p>
+                            <p class="fw-bold text-muted fs-4 mt-5">Price: <span class="text-dark fs-4">60.00 $</span>
+                            </p>
+                            <p class="text-muted small">per room / nightly</p>
+                            <button class="btn btn-success mt-0 w-100 py-3 rounded-3">Book now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0 shadow-sm rounded-3 mb-3">
+                    <h2 class="fs-2 fw-bold text-green VelaSans" id="headingTwo">
+                        <button class="accordion-button fw-bold bg-white text-green fs-2 shadow-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Today’s Rate - Flexible
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#tariffAccordion">
+                        <div class="accordion-body bg-white p-4">
+                            <p class="text-muted fs-5">This is our best flexible rate offering the most flexible
+                                cancellation policies. This booking can be cancelled for free until noon the day before
+                                your arrival. In case of later cancellation, you will be charged 100% of the night cost
+                                of the booking.</p>
+                            <p class="fw-bold text-muted fs-4 mt-5">Price: <span class="text-dark fs-4">60.00 $</span>
+                            </p>
+                            <p class="text-muted small">per room / nightly</p>
+                            <button class="btn btn-success mt-0 w-100 py-3 rounded-3">Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- js connections -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script>
+
+    <!-- script js -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
