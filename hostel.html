@@ -58,65 +58,109 @@
             <div
                 class="d-flex flex-column banner-hostel justify-content-center align-items-center text-center p-4 border-rounded rounded-5">
                 <h1 class="fw-medium">Hostel</h1>
-                <!-- <h6 class="display-6 w-40"> Discover the Be Shic network of hostels, hotels and
-                    apartments - a place where comfort, style and
-                    affordability combine to create an unforgettable holiday.</h6>
-                <div class="blur-bg mt-5 w-25 py-4 justify-content-between d-flex">
-                    <a href="#" class="blur-btn active ms-5">Hostel</a>
-                    <a href="#" class="blur-btn inactive">Apart-Hotel</a>
-                    <a href="#" class="blur-btn inactive me-5">Apartment</a>
-                </div> -->
-
             </div>
         </div>
     </section>
     <!-- end of banner  -->
 
-    <!-- filter -->
-    <section class="search-section">
-        <div class="container-fluid px-5">
-            <div class="search-box">
-                <div class="search-item">
-                    <label>House</label>
-                    <div class="search-input">
-                        <i class="bi bi-geo-alt"></i>
-                        <select class="form-select">
-                            <option selected>Please choose</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
+     <!-- filter desktop -->
+     <section class="search-section d-none d-md-block">
+        <div class="container-fluid mt-4 px-5">
+            <div class="p-3 bg-green text-white rounded-4">
+                <form class="row g-2 align-items-center">
+                    <div class="col-md-3">
+                        <label class="form-label">House</label>
+                        <div class="input-group bg-light-green border-4 rounded-3 border-light">
+                            <span class="input-group-text bg-transparent border-0 text-white py-3"><i
+                                    class="bi bi-geo-alt"></i></span>
+                            <select class="form-select border-0 text-white box-shadow-none bg-transparent">
+                                <option selected>Please choose</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="search-item">
-                    <label>Check-in</label>
-                    <div class="search-input">
-                        <i class="bi bi-calendar"></i>
-                        <input type="date" class="form-control">
+                    <div class="col-md-3">
+                        <label class="form-label">Check-in</label>
+                        <div class="input-group border-4 rounded-3  bg-light-green border-light">
+                            <span class="input-group-text border-0  text-white  bg-light-green py-3"><i
+                                    class="bi bi-calendar"></i></span>
+                            <input type="date" class="form-control border-0 text-white bg-transparent  bg-light-green box-shadow-none">
+                        </div>
                     </div>
-                </div>
-                <div class="search-item">
-                    <label>Check-out</label>
-                    <div class="search-input">
-                        <i class="bi bi-calendar"></i>
-                        <input type="date" class="form-control">
+                    <div class="col-md-3">
+                        <label class="form-label">Check-out</label>
+                        <div class="input-group border-4 rounded-3 bg-light-green border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
+                                    class="bi bi-calendar"></i></span>
+                            <input type="date" class="form-control border-0 text-white bg-transparent  box-shadow-none">
+                        </div>
                     </div>
-                </div>
-                <div class="search-item">
-                    <label>Guests</label>
-                    <div class="search-input">
-                        <i class="bi bi-person"></i>
-                        <select class="form-select">
-                            <option selected>1 guest</option>
-                            <option>2 guests</option>
-                            <option>3 guests</option>
-                        </select>
+                    <div class="col-md-2">
+                        <label class="form-label">Guests</label>
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
+                                    class="bi bi-person"></i></span>
+                            <select class="form-select border-0 text-white  bg-light-green box-shadow-none">
+                                <option selected>1 guest</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <button class="btn btn-light search-btn">Search</button>
+                    <div class="col-md-1 d-flex align-items-end justify-content-center pt-4">
+                        <button type="submit" class="btn btn-light py-3 rounded-4 w-100">Search</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
     <!-- end of filter -->
+
+    <!-- filter mob version -->
+    <section class="search-section d-md-none">
+        <div class="container-fluid mt-4 px-5">
+            <div class="p-3 bg-green text-white rounded-4">
+                <form class="row g-2 align-items-center">
+                    <div class="col-md-3">
+                        <label class="form-label">House</label>
+                        <div class="input-group bg-light-green border-4 rounded-4 border-light">
+                            <span class="input-group-text bg-transparent border-0 text-white py-3"><i
+                                    class="bi bi-geo-alt"></i></span>
+                            <select class="form-select border-0 text-white box-shadow-none bg-transparent">
+                                <option selected>Please choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Check-in</label>
+                        <div class="input-group border-4 rounded-3 bg-light-green border-light">
+                            <span class="input-group-text border-0  text-white  bg-light-green py-3"><i
+                                    class="bi bi-calendar"></i></span>
+                            <input type="date" class="form-control border-0 text-white bg-transparent box-shadow-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Check-out</label>
+                        <div class="input-group border-4 rounded-3 bg-light-green border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
+                                    class="bi bi-calendar"></i></span>
+                            <input type="date" class="form-control border-0 text-white bg-transparent box-shadow-none">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Guests</label>
+                        <div class="input-group border-4 rounded-3 border-light">
+                            <span class="input-group-text border-0 text-white  bg-light-green py-3"><i
+                                    class="bi bi-person"></i></span>
+                            <select class="form-select border-0 text-white  bg-light-green box-shadow-none">
+                                <option selected>1 guest</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-flex align-items-end justify-content-center pt-4">
+                        <button type="submit" class="btn btn-light py-2 rounded-4 w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- welcome words -->
     <section class="py-5">
