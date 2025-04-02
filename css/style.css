@@ -159,6 +159,19 @@ body {
 }
 
 
+.banner-apartment {
+    background-image: url('../images/apartments/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
 
 /* titles settings */
 h1 {
@@ -551,7 +564,7 @@ h6 {
         text-align: center;
       }
 
-    .banner, .banner-hostel, .ideal-room {
+    .banner, .banner-hostel, .banner-apartment, .ideal-room {
         height: 50vh;
     }
 
