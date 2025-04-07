@@ -183,6 +183,19 @@ body {
     text-align: center;
 }
 
+.faq-banner {
+    background-image: url('../images/articles/faq.png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
 
 /* titles settings */
 h1 {
@@ -603,6 +616,19 @@ h6 {
         color: white;
         text-align: center;
     }
+
+    .faq-banner_sm {
+        background-image: url('../images/articles/faq_sm.png');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
 
     .blur-bg {
         flex-direction: column;
