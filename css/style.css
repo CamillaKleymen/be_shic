@@ -171,6 +171,17 @@ body {
     text-align: center;
 }
 
+.articles-banner {
+    background-image: url('../images/articles/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
 
 
 /* titles settings */
