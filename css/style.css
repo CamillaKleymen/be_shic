@@ -630,6 +630,17 @@ h6 {
         color: white;
         text-align: center;
     }
+    .bg-footer {
+        background-image: url('../images/index/be_shic_footer_sm.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30vh; 
+        background-position: bottom center; 
+        display: flex;
+        justify-content: center; 
+        align-items: flex-end; 
+        padding-bottom: 10px; 
+    }
 
 
     .blur-bg {
