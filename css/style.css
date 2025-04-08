@@ -69,13 +69,14 @@ body {
 .bg-footer {
     background-image: url('../images/index/Be_Shic_footer.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Stretch in width */
-    height: 21vh; /* Reduced height by 30% */
+    background-size: cover; 
+    height: 21vh; 
     background-position: center;
-    height: 30vh; /* Reduced height from 40vh to 30vh */
+    height: 30vh; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    bottom: 0;
 }
 
 .bg-beige {
@@ -537,6 +538,7 @@ h6 {
     color: var(--text-green);
     background-color: transparent;
 }
+
 
 
 
